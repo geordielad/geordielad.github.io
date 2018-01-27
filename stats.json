@@ -8,42 +8,22 @@
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
-    "path---script-kiddie": [
-      "path---script-kiddie-e42993f1d4a0e6d291d3.js",
-      "path---script-kiddie-e42993f1d4a0e6d291d3.js.map"
-    ],
-    "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-eaa57329290e13f78bcb.js",
-      "component---src-templates-blog-post-js-eaa57329290e13f78bcb.js.map"
-    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-998b6983a18c6bc3d993.js",
       "component---src-layouts-index-js-998b6983a18c6bc3d993.js.map"
     ],
-    "path---mermaid": [
-      "path---mermaid-aff99de3085f91cf9523.js",
-      "path---mermaid-aff99de3085f91cf9523.js.map"
-    ],
-    "path---polygon-test": [
-      "path---polygon-test-09768f078ff50d4e3726.js",
-      "path---polygon-test-09768f078ff50d4e3726.js.map"
-    ],
     "path---index": [
-      "path---index-373f86ff7da479005cd3.js",
-      "path---index-373f86ff7da479005cd3.js.map"
-    ],
-    "path---hello-world": [
-      "path---hello-world-8e4fe07e2170bccf715c.js",
-      "path---hello-world-8e4fe07e2170bccf715c.js.map"
+      "path---index-c639f49decbf1d1d6157.js",
+      "path---index-c639f49decbf1d1d6157.js.map"
     ],
     "commons": [
       "commons-d41d8cd98f00b204e980.js",
       "commons-d41d8cd98f00b204e980.js.map"
     ],
     "app": [
-      "app-b8796d719d54f8bc33a3.js",
+      "app-b3952c5801f9c63189e9.js",
       "build-js-styles.css",
-      "app-b8796d719d54f8bc33a3.js.map",
+      "app-b3952c5801f9c63189e9.js.map",
       "build-js-styles.css.map"
     ]
   }
