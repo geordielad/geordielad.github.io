@@ -20,13 +20,17 @@
       "component---src-layouts-index-js-998b6983a18c6bc3d993.js",
       "component---src-layouts-index-js-998b6983a18c6bc3d993.js.map"
     ],
+    "path---mermaid": [
+      "path---mermaid-7236a51981fbaeb91fa0.js",
+      "path---mermaid-7236a51981fbaeb91fa0.js.map"
+    ],
     "path---polygon-test": [
       "path---polygon-test-09768f078ff50d4e3726.js",
       "path---polygon-test-09768f078ff50d4e3726.js.map"
     ],
     "path---index": [
-      "path---index-62d5db2ffe3955f78dda.js",
-      "path---index-62d5db2ffe3955f78dda.js.map"
+      "path---index-373f86ff7da479005cd3.js",
+      "path---index-373f86ff7da479005cd3.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-8e4fe07e2170bccf715c.js",
@@ -37,9 +41,9 @@
       "commons-d41d8cd98f00b204e980.js.map"
     ],
     "app": [
-      "app-c66d4bb3fab8511c3f42.js",
+      "app-b8796d719d54f8bc33a3.js",
       "build-js-styles.css",
-      "app-c66d4bb3fab8511c3f42.js.map",
+      "app-b8796d719d54f8bc33a3.js.map",
       "build-js-styles.css.map"
     ]
   }
