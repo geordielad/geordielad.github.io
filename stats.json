@@ -8,22 +8,34 @@
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-eaa57329290e13f78bcb.js",
+      "component---src-templates-blog-post-js-eaa57329290e13f78bcb.js.map"
+    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-998b6983a18c6bc3d993.js",
       "component---src-layouts-index-js-998b6983a18c6bc3d993.js.map"
     ],
+    "path---polygon-test": [
+      "path---polygon-test-1c24558e3172a38fc48f.js",
+      "path---polygon-test-1c24558e3172a38fc48f.js.map"
+    ],
     "path---index": [
-      "path---index-86e9ec104196114942a8.js",
-      "path---index-86e9ec104196114942a8.js.map"
+      "path---index-45698803cf3d251620aa.js",
+      "path---index-45698803cf3d251620aa.js.map"
+    ],
+    "path---hello-world": [
+      "path---hello-world-8e4fe07e2170bccf715c.js",
+      "path---hello-world-8e4fe07e2170bccf715c.js.map"
     ],
     "commons": [
       "commons-d41d8cd98f00b204e980.js",
       "commons-d41d8cd98f00b204e980.js.map"
     ],
     "app": [
-      "app-3f6cfef0bc583da86fbb.js",
+      "app-4efd6e32d2f73a5d77d8.js",
       "build-js-styles.css",
-      "app-3f6cfef0bc583da86fbb.js.map",
+      "app-4efd6e32d2f73a5d77d8.js.map",
       "build-js-styles.css.map"
     ]
   }
