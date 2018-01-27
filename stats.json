@@ -8,6 +8,10 @@
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "path---script-kiddie": [
+      "path---script-kiddie-e42993f1d4a0e6d291d3.js",
+      "path---script-kiddie-e42993f1d4a0e6d291d3.js.map"
+    ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-eaa57329290e13f78bcb.js",
       "component---src-templates-blog-post-js-eaa57329290e13f78bcb.js.map"
@@ -21,8 +25,8 @@
       "path---polygon-test-09768f078ff50d4e3726.js.map"
     ],
     "path---index": [
-      "path---index-192b922acc6513a67097.js",
-      "path---index-192b922acc6513a67097.js.map"
+      "path---index-62d5db2ffe3955f78dda.js",
+      "path---index-62d5db2ffe3955f78dda.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-8e4fe07e2170bccf715c.js",
@@ -33,9 +37,9 @@
       "commons-d41d8cd98f00b204e980.js.map"
     ],
     "app": [
-      "app-4efd6e32d2f73a5d77d8.js",
+      "app-c66d4bb3fab8511c3f42.js",
       "build-js-styles.css",
-      "app-4efd6e32d2f73a5d77d8.js.map",
+      "app-c66d4bb3fab8511c3f42.js.map",
       "build-js-styles.css.map"
     ]
   }
