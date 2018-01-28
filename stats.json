@@ -29,8 +29,8 @@
       "path---posts-humane-typography-in-the-digital-age-b78f2b60fa3e85ef92ca.js.map"
     ],
     "path---categories": [
-      "path---categories-41fa87800b198ce2f058.js",
-      "path---categories-41fa87800b198ce2f058.js.map"
+      "path---categories-09d98c6a13af60fbe337.js",
+      "path---categories-09d98c6a13af60fbe337.js.map"
     ],
     "path---tags-typefaces": [
       "path---tags-typefaces-9f2b5d2a4a04bf12fd3e.js",
@@ -41,16 +41,16 @@
       "component---src-pages-tags-jsx-fec50025a0470077bbdc.js.map"
     ],
     "path---tags-typography": [
-      "path---tags-typography-b0d12f0f43ae0c29fabf.js",
-      "path---tags-typography-b0d12f0f43ae0c29fabf.js.map"
+      "path---tags-typography-6a1e130f76d2f709c6c4.js",
+      "path---tags-typography-6a1e130f76d2f709c6c4.js.map"
     ],
     "path---tags-open-source": [
       "path---tags-open-source-bddeec4ad45a25507415.js",
       "path---tags-open-source-bddeec4ad45a25507415.js.map"
     ],
     "path---tags": [
-      "path---tags-e534e3181396e2afd856.js",
-      "path---tags-e534e3181396e2afd856.js.map"
+      "path---tags-89612fa1e90ba6c38b94.js",
+      "path---tags-89612fa1e90ba6c38b94.js.map"
     ],
     "path---categories-tableau": [
       "path---categories-tableau-d94b01358e3dc300b93f.js",
@@ -96,6 +96,10 @@
       "component---src-templates-post-template-jsx-cccbe34616c7e5fe64fa.js",
       "component---src-templates-post-template-jsx-cccbe34616c7e5fe64fa.js.map"
     ],
+    "path---tags-mermaid": [
+      "path---tags-mermaid-802736aac51c0e842672.js",
+      "path---tags-mermaid-802736aac51c0e842672.js.map"
+    ],
     "path---tags-history-of-typography": [
       "path---tags-history-of-typography-7e7c2f95e84f079f5be7.js",
       "path---tags-history-of-typography-7e7c2f95e84f079f5be7.js.map"
@@ -121,8 +125,8 @@
       "component---src-pages-categories-jsx-e329bc8c8d1b04d0c59b.js.map"
     ],
     "path---index": [
-      "path---index-9e52134e412e05a10a12.js",
-      "path---index-9e52134e412e05a10a12.js.map"
+      "path---index-36eacf40c8bdb8fe839b.js",
+      "path---index-36eacf40c8bdb8fe839b.js.map"
     ],
     "commons": [
       "commons-ab5201dad5e6e7eaf4ee.js",
@@ -150,6 +154,10 @@
       "path---tags-handwriting-85fb06de6daeafbfcb71.js",
       "path---tags-handwriting-85fb06de6daeafbfcb71.js.map"
     ],
+    "path---categories-tools": [
+      "path---categories-tools-1c7c733be8d2624fac6c.js",
+      "path---categories-tools-1c7c733be8d2624fac6c.js.map"
+    ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
@@ -163,12 +171,16 @@
       "path---tags-monotype-06d52e7cd05467a9fa10.js.map"
     ],
     "app": [
-      "app-b96920350a809c28f17c.js",
-      "app-b96920350a809c28f17c.js.map"
+      "app-c429bb32f53bb210659f.js",
+      "app-c429bb32f53bb210659f.js.map"
+    ],
+    "path---posts-mermaid-test": [
+      "path---posts-mermaid-test-9de770921355fbdace5c.js",
+      "path---posts-mermaid-test-9de770921355fbdace5c.js.map"
     ],
     "path---tags-web-development": [
-      "path---tags-web-development-89b2e14bd6d81aa97033.js",
-      "path---tags-web-development-89b2e14bd6d81aa97033.js.map"
+      "path---tags-web-development-1ef788cbea088fcb8050.js",
+      "path---tags-web-development-1ef788cbea088fcb8050.js.map"
     ],
     "path---posts-a-brief-history-of-typography": [
       "path---posts-a-brief-history-of-typography-c2fcd0d20c7d68f0ac52.js",
