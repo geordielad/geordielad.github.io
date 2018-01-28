@@ -1,0 +1,2 @@
+webpackJsonp([0xa2868bfb69fc],{372:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Blog by Robin Cottiss",subtitle:"Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",copyright:"© All rights reserved.",menu:[{label:"Articles",path:"/"},{label:"About me",path:"/about/"},{label:"Contact me",path:"/contact/"}],author:{name:"Robin Cottiss",email:"rcottiss@tableau.com",telegram:"#",twitter:"@geordielad",github:"@geordielad",rss:"#",vk:"#"}}}},pathContext:{}}}});
+//# sourceMappingURL=path---404-html-94681a973e9a79223557.js.map
