@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260,0x99703cc56f65],{329:function(e,t){e.exports={data:{allMarkdownRemark:{edges:[{node:{excerpt:"Oooooh-weeee, my first blog post!",id:"C:/Users/rcottiss/OneDrive - Tableau Software Inc/gatsby-blog/src/pages/01-27-2018-getting-started/index.md absPath of file >>> MarkdownRemark",frontmatter:{title:"My First Gatsby Post",date:"July 12, 2017",path:"/hello-world"}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-335c862e66f4783b5306.js.map

@@ -1,54 +1,178 @@
 {
   "assetsByChunkName": {
-    "component---src-pages-index-js": [
-      "component---src-pages-index-js-eb29fdf554454c112e1c.js",
-      "component---src-pages-index-js-eb29fdf554454c112e1c.js.map"
+    "component---src-templates-tag-template-jsx": [
+      "component---src-templates-tag-template-jsx-28e6b239d7e85ea2ff09.js",
+      "component---src-templates-tag-template-jsx-28e6b239d7e85ea2ff09.js.map"
+    ],
+    "path---posts-perfecting-the-art-of-perfection": [
+      "path---posts-perfecting-the-art-of-perfection-d3564968b38c2b2409e6.js",
+      "path---posts-perfecting-the-art-of-perfection-d3564968b38c2b2409e6.js.map"
+    ],
+    "component---src-templates-page-template-jsx": [
+      "component---src-templates-page-template-jsx-994fa15cdac2f9049e27.js",
+      "component---src-templates-page-template-jsx-994fa15cdac2f9049e27.js.map"
+    ],
+    "path---posts-the-birth-of-movable-type": [
+      "path---posts-the-birth-of-movable-type-9cdd6107333b81efafd8.js",
+      "path---posts-the-birth-of-movable-type-9cdd6107333b81efafd8.js.map"
+    ],
+    "path---tags-linotype": [
+      "path---tags-linotype-4ebb29811cb98106ba7d.js",
+      "path---tags-linotype-4ebb29811cb98106ba7d.js.map"
+    ],
+    "path---categories-design-culture": [
+      "path---categories-design-culture-6aa6862cecbca8b4923f.js",
+      "path---categories-design-culture-6aa6862cecbca8b4923f.js.map"
+    ],
+    "path---posts-humane-typography-in-the-digital-age": [
+      "path---posts-humane-typography-in-the-digital-age-b78f2b60fa3e85ef92ca.js",
+      "path---posts-humane-typography-in-the-digital-age-b78f2b60fa3e85ef92ca.js.map"
+    ],
+    "path---categories": [
+      "path---categories-fb376fbf75e79886bc6e.js",
+      "path---categories-fb376fbf75e79886bc6e.js.map"
+    ],
+    "path---tags-typefaces": [
+      "path---tags-typefaces-9f2b5d2a4a04bf12fd3e.js",
+      "path---tags-typefaces-9f2b5d2a4a04bf12fd3e.js.map"
+    ],
+    "component---src-pages-tags-jsx": [
+      "component---src-pages-tags-jsx-fec50025a0470077bbdc.js",
+      "component---src-pages-tags-jsx-fec50025a0470077bbdc.js.map"
+    ],
+    "path---tags-typography": [
+      "path---tags-typography-2fe54f1e12be600b6683.js",
+      "path---tags-typography-2fe54f1e12be600b6683.js.map"
+    ],
+    "path---tags-open-source": [
+      "path---tags-open-source-bddeec4ad45a25507415.js",
+      "path---tags-open-source-bddeec4ad45a25507415.js.map"
+    ],
+    "path---tags": [
+      "path---tags-4b84c258966c3ad65ad1.js",
+      "path---tags-4b84c258966c3ad65ad1.js.map"
+    ],
+    "path---categories-typography": [
+      "path---categories-typography-4d19a764159911528067.js",
+      "path---categories-typography-4d19a764159911528067.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
-    "path---script-kiddie": [
-      "path---script-kiddie-a6ff7395b384c4535f55.js",
-      "path---script-kiddie-a6ff7395b384c4535f55.js.map"
+    "path---tags-design": [
+      "path---tags-design-04c52c90ae367eea80ec.js",
+      "path---tags-design-04c52c90ae367eea80ec.js.map"
     ],
-    "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-eaa57329290e13f78bcb.js",
-      "component---src-templates-blog-post-js-eaa57329290e13f78bcb.js.map"
+    "component---src-layouts-index-jsx": [
+      "component---src-layouts-index-jsx-17f5dbe92365935ad25a.js",
+      "component---src-layouts-index-jsx-17f5dbe92365935ad25a.js.map"
     ],
-    "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-998b6983a18c6bc3d993.js",
-      "component---src-layouts-index-js-998b6983a18c6bc3d993.js.map"
+    "path---tags-helvetica": [
+      "path---tags-helvetica-9e6853a3d008d4977a72.js",
+      "path---tags-helvetica-9e6853a3d008d4977a72.js.map"
     ],
-    "path---mermaid": [
-      "path---mermaid-aff99de3085f91cf9523.js",
-      "path---mermaid-aff99de3085f91cf9523.js.map"
+    "path---categories-design-inspiration": [
+      "path---categories-design-inspiration-8cb4e939220f01defe22.js",
+      "path---categories-design-inspiration-8cb4e939220f01defe22.js.map"
     ],
-    "path---polygon-test": [
-      "path---polygon-test-a8f59cc783c90c4d9fcf.js",
-      "path---polygon-test-a8f59cc783c90c4d9fcf.js.map"
+    "component---src-templates-category-template-jsx": [
+      "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js",
+      "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-templates-post-template-jsx": [
+      "component---src-templates-post-template-jsx-4bf38e09095dae255cb4.js",
+      "component---src-templates-post-template-jsx-4bf38e09095dae255cb4.js.map"
+    ],
+    "path---tags-history-of-typography": [
+      "path---tags-history-of-typography-7e7c2f95e84f079f5be7.js",
+      "path---tags-history-of-typography-7e7c2f95e84f079f5be7.js.map"
+    ],
+    "path---tags-lettering": [
+      "path---tags-lettering-1ea3990cb2cde2040e98.js",
+      "path---tags-lettering-1ea3990cb2cde2040e98.js.map"
+    ],
+    "path---posts-the-origins-of-social-stationery-lettering": [
+      "path---posts-the-origins-of-social-stationery-lettering-0137036cdabdde874b40.js",
+      "path---posts-the-origins-of-social-stationery-lettering-0137036cdabdde874b40.js.map"
+    ],
+    "path---tags-gatsby": [
+      "path---tags-gatsby-6619968aa791fdf329b8.js",
+      "path---tags-gatsby-6619968aa791fdf329b8.js.map"
+    ],
+    "path---tags-learning-to-write": [
+      "path---tags-learning-to-write-02ac5e4038d54f200b47.js",
+      "path---tags-learning-to-write-02ac5e4038d54f200b47.js.map"
+    ],
+    "component---src-pages-categories-jsx": [
+      "component---src-pages-categories-jsx-e329bc8c8d1b04d0c59b.js",
+      "component---src-pages-categories-jsx-e329bc8c8d1b04d0c59b.js.map"
     ],
     "path---index": [
-      "path---index-b4c1a94eae1f2485afb3.js",
-      "path---index-b4c1a94eae1f2485afb3.js.map"
-    ],
-    "path---hello-world": [
-      "path---hello-world-8e4fe07e2170bccf715c.js",
-      "path---hello-world-8e4fe07e2170bccf715c.js.map"
+      "path---index-d00de6b6edf9a30e7a45.js",
+      "path---index-d00de6b6edf9a30e7a45.js.map"
     ],
     "commons": [
-      "commons-d41d8cd98f00b204e980.js",
-      "commons-d41d8cd98f00b204e980.js.map"
+      "commons-ab5201dad5e6e7eaf4ee.js",
+      "build-js-styles.css",
+      "commons-ab5201dad5e6e7eaf4ee.js.map",
+      "build-js-styles.css.map"
     ],
-    "path---01-27-2018-test-relative-images": [
-      "path---01-27-2018-test-relative-images-ef3c8919a971cbff3814.js",
-      "path---01-27-2018-test-relative-images-ef3c8919a971cbff3814.js.map"
+    "path---404-html": [
+      "path---404-html-ce8a5eb9789115c0af77.js",
+      "path---404-html-ce8a5eb9789115c0af77.js.map"
+    ],
+    "path---tags-history": [
+      "path---tags-history-c1155cc601a592837bcd.js",
+      "path---tags-history-c1155cc601a592837bcd.js.map"
+    ],
+    "component---src-pages-404-jsx": [
+      "component---src-pages-404-jsx-3d0441dd1a11b2f3a35b.js",
+      "component---src-pages-404-jsx-3d0441dd1a11b2f3a35b.js.map"
+    ],
+    "path---contact": [
+      "path---contact-d66d571b123a5faaf546.js",
+      "path---contact-d66d571b123a5faaf546.js.map"
+    ],
+    "path---tags-handwriting": [
+      "path---tags-handwriting-85fb06de6daeafbfcb71.js",
+      "path---tags-handwriting-85fb06de6daeafbfcb71.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-index-jsx": [
+      "component---src-pages-index-jsx-6c38fc1ad9979dc9d50f.js",
+      "component---src-pages-index-jsx-6c38fc1ad9979dc9d50f.js.map"
+    ],
+    "path---tags-monotype": [
+      "path---tags-monotype-06d52e7cd05467a9fa10.js",
+      "path---tags-monotype-06d52e7cd05467a9fa10.js.map"
     ],
     "app": [
-      "app-3098c5cc19cdcc8e7e11.js",
-      "build-js-styles.css",
-      "app-3098c5cc19cdcc8e7e11.js.map",
-      "build-js-styles.css.map"
+      "app-4a0645221e9cac65954c.js",
+      "app-4a0645221e9cac65954c.js.map"
+    ],
+    "path---tags-web-development": [
+      "path---tags-web-development-6084b8345613129e4f1d.js",
+      "path---tags-web-development-6084b8345613129e4f1d.js.map"
+    ],
+    "path---posts-a-brief-history-of-typography": [
+      "path---posts-a-brief-history-of-typography-c2fcd0d20c7d68f0ac52.js",
+      "path---posts-a-brief-history-of-typography-c2fcd0d20c7d68f0ac52.js.map"
+    ],
+    "path---404": [
+      "path---404-ce8a5eb9789115c0af77.js",
+      "path---404-ce8a5eb9789115c0af77.js.map"
+    ],
+    "path---about": [
+      "path---about-68e49620b257712ed920.js",
+      "path---about-68e49620b257712ed920.js.map"
     ]
   }
 }
