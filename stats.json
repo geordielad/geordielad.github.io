@@ -29,8 +29,8 @@
       "path---posts-humane-typography-in-the-digital-age-b78f2b60fa3e85ef92ca.js.map"
     ],
     "path---categories": [
-      "path---categories-fb376fbf75e79886bc6e.js",
-      "path---categories-fb376fbf75e79886bc6e.js.map"
+      "path---categories-2a08bfebed3fb0ea7e69.js",
+      "path---categories-2a08bfebed3fb0ea7e69.js.map"
     ],
     "path---tags-typefaces": [
       "path---tags-typefaces-9f2b5d2a4a04bf12fd3e.js",
@@ -41,28 +41,28 @@
       "component---src-pages-tags-jsx-fec50025a0470077bbdc.js.map"
     ],
     "path---tags-typography": [
-      "path---tags-typography-2fe54f1e12be600b6683.js",
-      "path---tags-typography-2fe54f1e12be600b6683.js.map"
+      "path---tags-typography-40a9a885edd0c47031fb.js",
+      "path---tags-typography-40a9a885edd0c47031fb.js.map"
     ],
     "path---tags-open-source": [
       "path---tags-open-source-bddeec4ad45a25507415.js",
       "path---tags-open-source-bddeec4ad45a25507415.js.map"
     ],
     "path---tags": [
-      "path---tags-4b84c258966c3ad65ad1.js",
-      "path---tags-4b84c258966c3ad65ad1.js.map"
+      "path---tags-e534e3181396e2afd856.js",
+      "path---tags-e534e3181396e2afd856.js.map"
     ],
     "path---categories-typography": [
-      "path---categories-typography-4d19a764159911528067.js",
-      "path---categories-typography-4d19a764159911528067.js.map"
+      "path---categories-typography-6ec024b8d0072949a77b.js",
+      "path---categories-typography-6ec024b8d0072949a77b.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---tags-design": [
-      "path---tags-design-04c52c90ae367eea80ec.js",
-      "path---tags-design-04c52c90ae367eea80ec.js.map"
+      "path---tags-design-620787dd7c2ccfcb41cb.js",
+      "path---tags-design-620787dd7c2ccfcb41cb.js.map"
     ],
     "component---src-layouts-index-jsx": [
       "component---src-layouts-index-jsx-17f5dbe92365935ad25a.js",
@@ -79,6 +79,10 @@
     "component---src-templates-category-template-jsx": [
       "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js",
       "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js.map"
+    ],
+    "path---posts-script-kiddie": [
+      "path---posts-script-kiddie-91f0013df4ae81f5e1c8.js",
+      "path---posts-script-kiddie-91f0013df4ae81f5e1c8.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -113,8 +117,8 @@
       "component---src-pages-categories-jsx-e329bc8c8d1b04d0c59b.js.map"
     ],
     "path---index": [
-      "path---index-d00de6b6edf9a30e7a45.js",
-      "path---index-d00de6b6edf9a30e7a45.js.map"
+      "path---index-3a2296a4b54d10cdccc8.js",
+      "path---index-3a2296a4b54d10cdccc8.js.map"
     ],
     "commons": [
       "commons-ab5201dad5e6e7eaf4ee.js",
@@ -155,12 +159,12 @@
       "path---tags-monotype-06d52e7cd05467a9fa10.js.map"
     ],
     "app": [
-      "app-4a0645221e9cac65954c.js",
-      "app-4a0645221e9cac65954c.js.map"
+      "app-f91c08f45acd18479683.js",
+      "app-f91c08f45acd18479683.js.map"
     ],
     "path---tags-web-development": [
-      "path---tags-web-development-6084b8345613129e4f1d.js",
-      "path---tags-web-development-6084b8345613129e4f1d.js.map"
+      "path---tags-web-development-76517ed83326946ffd18.js",
+      "path---tags-web-development-76517ed83326946ffd18.js.map"
     ],
     "path---posts-a-brief-history-of-typography": [
       "path---posts-a-brief-history-of-typography-c2fcd0d20c7d68f0ac52.js",
