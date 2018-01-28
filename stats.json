@@ -29,8 +29,8 @@
       "path---posts-humane-typography-in-the-digital-age-0e9e709ea40516e1de01.js.map"
     ],
     "path---categories": [
-      "path---categories-15341ac70cad027f9d42.js",
-      "path---categories-15341ac70cad027f9d42.js.map"
+      "path---categories-46be87994c298fd2a578.js",
+      "path---categories-46be87994c298fd2a578.js.map"
     ],
     "path---tags-typefaces": [
       "path---tags-typefaces-556b20409d7349d0b1c9.js",
@@ -41,20 +41,16 @@
       "component---src-pages-tags-jsx-fec50025a0470077bbdc.js.map"
     ],
     "path---tags-typography": [
-      "path---tags-typography-30f3dd110cc86264c2dc.js",
-      "path---tags-typography-30f3dd110cc86264c2dc.js.map"
+      "path---tags-typography-4c6732a940cfa2fc944e.js",
+      "path---tags-typography-4c6732a940cfa2fc944e.js.map"
     ],
     "path---tags-open-source": [
       "path---tags-open-source-eff8e5c8fa75bc47d8e9.js",
       "path---tags-open-source-eff8e5c8fa75bc47d8e9.js.map"
     ],
     "path---tags": [
-      "path---tags-6414605020a64e0134aa.js",
-      "path---tags-6414605020a64e0134aa.js.map"
-    ],
-    "path---categories-tableau": [
-      "path---categories-tableau-c36a5ddee82521e5b383.js",
-      "path---categories-tableau-c36a5ddee82521e5b383.js.map"
+      "path---tags-6898068dc38d961c6c6c.js",
+      "path---tags-6898068dc38d961c6c6c.js.map"
     ],
     "path---categories-typography": [
       "path---categories-typography-84dbb60571ffbe63cf46.js",
@@ -65,8 +61,8 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---tags-design": [
-      "path---tags-design-578d01661b2729be19f3.js",
-      "path---tags-design-578d01661b2729be19f3.js.map"
+      "path---tags-design-76e8c642ad027dac1c50.js",
+      "path---tags-design-76e8c642ad027dac1c50.js.map"
     ],
     "component---src-layouts-index-jsx": [
       "component---src-layouts-index-jsx-57ab0dcf7b0bbdde5fb1.js",
@@ -83,10 +79,6 @@
     "component---src-templates-category-template-jsx": [
       "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js",
       "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js.map"
-    ],
-    "path---posts-script-kiddie": [
-      "path---posts-script-kiddie-0eaca040e18cf26ae0f0.js",
-      "path---posts-script-kiddie-0eaca040e18cf26ae0f0.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -125,8 +117,8 @@
       "component---src-pages-categories-jsx-e329bc8c8d1b04d0c59b.js.map"
     ],
     "path---index": [
-      "path---index-0285cec3c70d446863b4.js",
-      "path---index-0285cec3c70d446863b4.js.map"
+      "path---index-1a1430aaccc2fab94a04.js",
+      "path---index-1a1430aaccc2fab94a04.js.map"
     ],
     "commons": [
       "commons-068c579e47b8064d9326.js",
@@ -171,16 +163,16 @@
       "path---tags-monotype-c4245fd3ea0e4cb068ec.js.map"
     ],
     "app": [
-      "app-40d97704a2b4a5e067a8.js",
-      "app-40d97704a2b4a5e067a8.js.map"
+      "app-4455bd874cf09b2d8b51.js",
+      "app-4455bd874cf09b2d8b51.js.map"
     ],
     "path---posts-mermaid-test": [
       "path---posts-mermaid-test-b59b2f1b2776299efbb9.js",
       "path---posts-mermaid-test-b59b2f1b2776299efbb9.js.map"
     ],
     "path---tags-web-development": [
-      "path---tags-web-development-e214d23e319ddbe9d271.js",
-      "path---tags-web-development-e214d23e319ddbe9d271.js.map"
+      "path---tags-web-development-b78476a39bfd0e1b7b3d.js",
+      "path---tags-web-development-b78476a39bfd0e1b7b3d.js.map"
     ],
     "path---posts-a-brief-history-of-typography": [
       "path---posts-a-brief-history-of-typography-2773dc13affd75f5ceba.js",
@@ -191,8 +183,8 @@
       "path---404-4b1b77d68eca4dcbdc82.js.map"
     ],
     "path---about": [
-      "path---about-2be77e984f65642b4171.js",
-      "path---about-2be77e984f65642b4171.js.map"
+      "path---about-21f261271dbdd3e9465d.js",
+      "path---about-21f261271dbdd3e9465d.js.map"
     ]
   }
 }
