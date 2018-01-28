@@ -29,8 +29,8 @@
       "path---posts-humane-typography-in-the-digital-age-b78f2b60fa3e85ef92ca.js.map"
     ],
     "path---categories": [
-      "path---categories-2a08bfebed3fb0ea7e69.js",
-      "path---categories-2a08bfebed3fb0ea7e69.js.map"
+      "path---categories-41fa87800b198ce2f058.js",
+      "path---categories-41fa87800b198ce2f058.js.map"
     ],
     "path---tags-typefaces": [
       "path---tags-typefaces-9f2b5d2a4a04bf12fd3e.js",
@@ -41,8 +41,8 @@
       "component---src-pages-tags-jsx-fec50025a0470077bbdc.js.map"
     ],
     "path---tags-typography": [
-      "path---tags-typography-40a9a885edd0c47031fb.js",
-      "path---tags-typography-40a9a885edd0c47031fb.js.map"
+      "path---tags-typography-b0d12f0f43ae0c29fabf.js",
+      "path---tags-typography-b0d12f0f43ae0c29fabf.js.map"
     ],
     "path---tags-open-source": [
       "path---tags-open-source-bddeec4ad45a25507415.js",
@@ -52,17 +52,21 @@
       "path---tags-e534e3181396e2afd856.js",
       "path---tags-e534e3181396e2afd856.js.map"
     ],
+    "path---categories-tableau": [
+      "path---categories-tableau-d94b01358e3dc300b93f.js",
+      "path---categories-tableau-d94b01358e3dc300b93f.js.map"
+    ],
     "path---categories-typography": [
-      "path---categories-typography-6ec024b8d0072949a77b.js",
-      "path---categories-typography-6ec024b8d0072949a77b.js.map"
+      "path---categories-typography-4d19a764159911528067.js",
+      "path---categories-typography-4d19a764159911528067.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---tags-design": [
-      "path---tags-design-620787dd7c2ccfcb41cb.js",
-      "path---tags-design-620787dd7c2ccfcb41cb.js.map"
+      "path---tags-design-cce19ce2e34ab7adf970.js",
+      "path---tags-design-cce19ce2e34ab7adf970.js.map"
     ],
     "component---src-layouts-index-jsx": [
       "component---src-layouts-index-jsx-17f5dbe92365935ad25a.js",
@@ -81,16 +85,16 @@
       "component---src-templates-category-template-jsx-b755cb17ab99eccccdc1.js.map"
     ],
     "path---posts-script-kiddie": [
-      "path---posts-script-kiddie-0e5d5b3c65b278ac6587.js",
-      "path---posts-script-kiddie-0e5d5b3c65b278ac6587.js.map"
+      "path---posts-script-kiddie-143275d576edb100762f.js",
+      "path---posts-script-kiddie-143275d576edb100762f.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-post-template-jsx": [
-      "component---src-templates-post-template-jsx-4bf38e09095dae255cb4.js",
-      "component---src-templates-post-template-jsx-4bf38e09095dae255cb4.js.map"
+      "component---src-templates-post-template-jsx-cccbe34616c7e5fe64fa.js",
+      "component---src-templates-post-template-jsx-cccbe34616c7e5fe64fa.js.map"
     ],
     "path---tags-history-of-typography": [
       "path---tags-history-of-typography-7e7c2f95e84f079f5be7.js",
@@ -117,8 +121,8 @@
       "component---src-pages-categories-jsx-e329bc8c8d1b04d0c59b.js.map"
     ],
     "path---index": [
-      "path---index-3a2296a4b54d10cdccc8.js",
-      "path---index-3a2296a4b54d10cdccc8.js.map"
+      "path---index-9e52134e412e05a10a12.js",
+      "path---index-9e52134e412e05a10a12.js.map"
     ],
     "commons": [
       "commons-ab5201dad5e6e7eaf4ee.js",
@@ -159,12 +163,12 @@
       "path---tags-monotype-06d52e7cd05467a9fa10.js.map"
     ],
     "app": [
-      "app-f91c08f45acd18479683.js",
-      "app-f91c08f45acd18479683.js.map"
+      "app-b96920350a809c28f17c.js",
+      "app-b96920350a809c28f17c.js.map"
     ],
     "path---tags-web-development": [
-      "path---tags-web-development-76517ed83326946ffd18.js",
-      "path---tags-web-development-76517ed83326946ffd18.js.map"
+      "path---tags-web-development-89b2e14bd6d81aa97033.js",
+      "path---tags-web-development-89b2e14bd6d81aa97033.js.map"
     ],
     "path---posts-a-brief-history-of-typography": [
       "path---posts-a-brief-history-of-typography-c2fcd0d20c7d68f0ac52.js",
