@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/component---src-layouts-index-js-998b6983a18c6bc3d993.js" as="script"/><link rel="preload" href="/component---src-templates-blog-post-js-eaa57329290e13f78bcb.js" as="script"/><link rel="preload" href="/path---01-27-2018-test-relative-images-3dad60aaa642b2937523.js" as="script"/><link rel="preload" href="/app-1fb66712b405c81b1d91.js" as="script"/><link rel="preload" href="/commons-d41d8cd98f00b204e980.js" as="script"/><title data-react-helmet="true">Your Blog Name - Exercise 1 - Download NYC Taxi Data from Internet to AWS S3</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="1444308065"><!-- react-empty: 2 --><div style="background:rebeccapurple;margin-bottom:1.45rem;" data-reactid="3"><div style="margin:0 auto;max-width:960px;padding:1.45rem 1.0875rem;" data-reactid="4"><h1 style="margin:0;" data-reactid="5"><a style="color:white;text-decoration:none;" href="/" data-reactid="6">Gatsby</a></h1></div></div><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="7"><div class="blog-post-container" data-reactid="8"><!-- react-empty: 9 --><div class="blog-post" data-reactid="10"><h1 data-reactid="11">Exercise 1 - Download NYC Taxi Data from Internet to AWS S3</h1><div class="blog-post-content" data-reactid="12"><h2>Introduction</h2>
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/component---src-layouts-index-js-998b6983a18c6bc3d993.js" as="script"/><link rel="preload" href="/component---src-templates-blog-post-js-eaa57329290e13f78bcb.js" as="script"/><link rel="preload" href="/path---01-27-2018-test-relative-images-ef3c8919a971cbff3814.js" as="script"/><link rel="preload" href="/app-3098c5cc19cdcc8e7e11.js" as="script"/><link rel="preload" href="/commons-d41d8cd98f00b204e980.js" as="script"/><title data-react-helmet="true">Your Blog Name - Exercise 1 - Download NYC Taxi Data from Internet to AWS S3</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="-1087918179"><!-- react-empty: 2 --><div style="background:rebeccapurple;margin-bottom:1.45rem;" data-reactid="3"><div style="margin:0 auto;max-width:960px;padding:1.45rem 1.0875rem;" data-reactid="4"><h1 style="margin:0;" data-reactid="5"><a style="color:white;text-decoration:none;" href="/" data-reactid="6">Gatsby</a></h1></div></div><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="7"><div class="blog-post-container" data-reactid="8"><!-- react-empty: 9 --><div class="blog-post" data-reactid="10"><h1 data-reactid="11">Exercise 1 - Download NYC Taxi Data from Internet to AWS S3</h1><div class="blog-post-content" data-reactid="12"><h2>Introduction</h2>
 <p>In this Exercise you will transfer some data from a public internet source to your own AWS Simple Storage Service (S3) bucket. From now on we can think of S3 as our Data Lake but it is imortant to know that our Lake could be storing many types of data and that the Lake might not be the only source of data. In this exercise we are focusing on Ingesting raw data into our Storage Platform.</p>
 <div class="mermaid">graph LR
      RD[Raw Data] --> RS[Raw Storage]
@@ -14,7 +14,7 @@
 <p>We will see later that in this specific case the dedicated instance is redundant, at least in terms of data trnasfer performance, but if you ever really need to transfer data from outside to inside AWS an EC2 or Lightsail instance could be useful and will only cost a few dollars ($5-$10 per month and you might only need it for a few days). </p>
 <p>I created a Lightsail instance because I wanted to learn about <a href="https://aws.amazon.com/blogs/aws/amazon-lightsail-the-power-of-aws-the-simplicity-of-a-vps/">Lightsail</a>. </p>
 <p>Lightsail is a really good way to start off in AWS now that there are so many options even for EC2.</p>
-<p>Lightsail has it's own console. The idea is to keep it simple as possible. You can start from the <a href="https://console.aws.amazon.com/console">AWS Console</a> and jump to Lightsail or <a href="https://lightsail.aws.amazon.com/ls/webapp/home/instances">go direct to Lighsail</a></p>
+<p>Lightsail has it’s own console. The idea is to keep it simple as possible. You can start from the <a href="https://console.aws.amazon.com/console">AWS Console</a> and jump to Lightsail or <a href="https://lightsail.aws.amazon.com/ls/webapp/home/instances">go direct to Lighsail</a></p>
 <p>
   <span
     class="gatsby-resp-image-wrapper"
@@ -41,7 +41,7 @@
     </span>
   </span>
   </p>
-<p>Don't worry You will get to see a lot more of the full blown AWS console later.</p>
+<p>Don’t worry You will get to see a lot more of the full blown AWS console later.</p>
 <p>Click <strong>Create Instance</strong></p>
 <p>
   <span
@@ -69,7 +69,7 @@
   </span>
   </p>
 <p>We want a Linux instance but we do not need any of the Application Blueprints. They seem geared towards simple Web sites and Content Management Systems. Maybe we will see this list grow in the future. Should we ask them to add Tableau?</p>
-<p>Switch to OS Only - I chose Ubuntu. When you are learning Linux your will find a lot of tutorials and examples based on Ubuntu. It's a safe bet.</p>
+<p>Switch to OS Only - I chose Ubuntu. When you are learning Linux your will find a lot of tutorials and examples based on Ubuntu. It’s a safe bet.</p>
 <p>
   <span
     class="gatsby-resp-image-wrapper"
@@ -200,7 +200,7 @@
   </p>
 <p>Or you can use Putty or MobaXterm from your laptop.</p>
 <p>ssh into the new instance</p>
-<p>The web terminal has it's own way of pasting commands.</p>
+<p>The web terminal has it’s own way of pasting commands.</p>
 <p>
   <span
     class="gatsby-resp-image-wrapper"
@@ -332,22 +332,34 @@
   </p>
 <p>Try these commands</p>
 <p>If this is a new instance update the package lists to the latest. </p>
-<pre><code class="language-bash">sudo apt-get update
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt-get</span> update
 </code></pre>
+      </div>
 <p>install and upgrade pip so we can install other Python libraries</p>
-<pre><code class="language-bash">sudo apt install python-pip
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code><span class="token function">sudo</span> apt <span class="token function">install</span> python-pip
 </code></pre>
-<pre><code class="language-bash">pip install --upgrade pip
+      </div>
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code>pip <span class="token function">install</span> --upgrade pip
 </code></pre>
+      </div>
 <p>Install boto3. This is the AWS Python library SDK</p>
-<pre><code class="language-bash">sudo pip install boto3
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code><span class="token function">sudo</span> pip <span class="token function">install</span> boto3
 </code></pre>
+      </div>
 <p>Install the AWS CLI</p>
-<pre><code class="language-bash">pip install awscli --upgrade --user
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code>pip <span class="token function">install</span> awscli --upgrade --user
 </code></pre>
+      </div>
 <p>Configure the AWS CLI to store your AWS Credentials. This allow the CLI and boto3 to authenticate to AWS automatically. </p>
-<pre><code class="language-bash">aws configure
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code>aws configure
 </code></pre>
+      </div>
 <p>You will be prompted for your AWS Access Key, Secret Access Key and default region name. I used us-east-1 as this is where I create most of AWS services like S3 buckets, EC2 Instances and databases etc. This is a good practice to optimize performance and to reduce costs.</p>
 <p>
   <span
@@ -373,75 +385,84 @@
   </span>
   </p>
 <p>Install Jupyter</p>
-<pre><code class="language-bash">sudo pip install jupyter
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code><span class="token function">sudo</span> pip <span class="token function">install</span> jupyter
 </code></pre>
-<pre><code class="language-bash">jupyter notebook
+      </div>
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code>jupyter notebook
 </code></pre>
+      </div>
 <p>On first run Jupyter Notebook will provide a URL with a token (it assumes localhost but you need to do this from your laptop)
 Now in your web browser</p>
-<pre><code>http://&#x3C;ip address>:8888/?token=c55d478985edc8d67c9fd7a5950be833cc27f0c1bf3e2706
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>http://<ip address>:8888/?token=c55d478985edc8d67c9fd7a5950be833cc27f0c1bf3e2706
 http://54.208.25.70:8888/?token=c55d478985edc8d67c9fd7a5950be833cc27f0c1bf3e2706
 
 http://54.208.25.70:8888/?token=c3cb7b6e83d8faa429d585d0e9230fd4a17340966e994114
-http://54.208.25.70:8888/?token=18c3d4adef121edce82dddac39290f6251dfe03d7f262f5c
-</code></pre>
+http://54.208.25.70:8888/?token=18c3d4adef121edce82dddac39290f6251dfe03d7f262f5c</code></pre>
+      </div>
 <h3>Step 2 - Download/Transfer RAW Data into S3</h3>
 <p>Now we can create a small Python script to download the files to our local machine and upload them to S3. You can do this manually one file at a time via your own laptop but that will be tedious and slow. This script will be a lot faster as it is running on an instance in AWS but we can do better. The source data is actually already in a public bucket in S3 so we can take advantage of that and do a stratight copy of the file from one bucket to another.</p>
 <p>The source code is quite simple:</p>
-<pre><code class="language-python">import boto3
+<div class="gatsby-highlight">
+      <pre class="language-python"><code><span class="token keyword">import</span> boto3
 
-# Let's use Amazon S3
-s3 = boto3.resource('s3')
-
-
-# Print out bucket names
-for bucket in s3.buckets.all():
-    print(bucket.name)
-
-response = s3.create_bucket(
-    ACL='private',
-    Bucket='tableau-rcottiss-gsko18-nyc-taxi-raw'
-)
+<span class="token comment"># Let's use Amazon S3</span>
+s3 <span class="token operator">=</span> boto3<span class="token punctuation">.</span>resource<span class="token punctuation">(</span><span class="token string">'s3'</span><span class="token punctuation">)</span>
 
 
-## Get CSV file from NYC Taxi Site
-#import urllib
-#print "Getting File fomr NYC Taxi Site"
-#urllib.urlretrieve ("https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2009-02.csv", "yellow_tripdata_2009-02.csv")
+<span class="token comment"># Print out bucket names</span>
+<span class="token keyword">for</span> bucket <span class="token keyword">in</span> s3<span class="token punctuation">.</span>buckets<span class="token punctuation">.</span><span class="token builtin">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>bucket<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
 
-## Upload to S3
-#bucket = s3.Bucket('tableau-rcottiss-gsko18-nyc-taxi-raw')
-#print "Uploading  File to S3"
-#bucket.upload_file('yellow_tripdata_2009-02.csv', 'trip-data/yellow_tripdata_2009-02.csv')
-#print "Done"
+response <span class="token operator">=</span> s3<span class="token punctuation">.</span>create_bucket<span class="token punctuation">(</span>
+    ACL<span class="token operator">=</span><span class="token string">'private'</span><span class="token punctuation">,</span>
+    Bucket<span class="token operator">=</span><span class="token string">'tableau-rcottiss-gsko18-nyc-taxi-raw'</span>
+<span class="token punctuation">)</span>
 
 
-## Transfer data from one S3 bucket to another. Better performance for data alrady in S3
+<span class="token comment">## Get CSV file from NYC Taxi Site</span>
+<span class="token comment">#import urllib</span>
+<span class="token comment">#print "Getting File fomr NYC Taxi Site"</span>
+<span class="token comment">#urllib.urlretrieve ("https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2009-02.csv", "yellow_tripdata_2009-02.csv")</span>
 
-source_bucket = s3.Bucket('nyc-tlc')
+<span class="token comment">## Upload to S3</span>
+<span class="token comment">#bucket = s3.Bucket('tableau-rcottiss-gsko18-nyc-taxi-raw')</span>
+<span class="token comment">#print "Uploading  File to S3"</span>
+<span class="token comment">#bucket.upload_file('yellow_tripdata_2009-02.csv', 'trip-data/yellow_tripdata_2009-02.csv')</span>
+<span class="token comment">#print "Done"</span>
 
-for file in source_bucket.objects.all():
-    print file.key
 
-    copy_source = {
-        'Bucket': 'nyc-tlc',
-        'Key': file.key
-    }
-    if file.key.find('yellow_tripdata_') > 0:
-        # Some features of AWS do not like spaces in S3 folders. Replace with '-'
-        destination_key = file.key.replace(" ", "-")
-        print "Copying File:" , file.key , "to", destination_key
-        s3.meta.client.copy(copy_source, 'tableau-rcottiss-gsko18-nyc-taxi-raw', destination_key)
+<span class="token comment">## Transfer data from one S3 bucket to another. Better performance for data alrady in S3</span>
+
+source_bucket <span class="token operator">=</span> s3<span class="token punctuation">.</span>Bucket<span class="token punctuation">(</span><span class="token string">'nyc-tlc'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> <span class="token builtin">file</span> <span class="token keyword">in</span> source_bucket<span class="token punctuation">.</span>objects<span class="token punctuation">.</span><span class="token builtin">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span> <span class="token builtin">file</span><span class="token punctuation">.</span>key
+
+    copy_source <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'Bucket'</span><span class="token punctuation">:</span> <span class="token string">'nyc-tlc'</span><span class="token punctuation">,</span>
+        <span class="token string">'Key'</span><span class="token punctuation">:</span> <span class="token builtin">file</span><span class="token punctuation">.</span>key
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token builtin">file</span><span class="token punctuation">.</span>key<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">'yellow_tripdata_'</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token comment"># Some features of AWS do not like spaces in S3 folders. Replace with '-'</span>
+        destination_key <span class="token operator">=</span> <span class="token builtin">file</span><span class="token punctuation">.</span>key<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span> <span class="token string">"-"</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span> <span class="token string">"Copying File:"</span> <span class="token punctuation">,</span> <span class="token builtin">file</span><span class="token punctuation">.</span>key <span class="token punctuation">,</span> <span class="token string">"to"</span><span class="token punctuation">,</span> destination_key
+        s3<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>client<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>copy_source<span class="token punctuation">,</span> <span class="token string">'tableau-rcottiss-gsko18-nyc-taxi-raw'</span><span class="token punctuation">,</span> destination_key<span class="token punctuation">)</span>
 </code></pre>
-<pre><code class="language-bash">python get-nyc-taxi-data.py
+      </div>
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code>python get-nyc-taxi-data.py
   download and upload
   or transfer from external s3 bucket to s3
-  Takes about 20 seconds per file (30mins total)
+  Takes about 20 seconds per <span class="token function">file</span> <span class="token punctuation">(</span>30mins total<span class="token punctuation">)</span>
 </code></pre>
+      </div>
 <h2>Stage 2 - Understand the Raw Data</h2>
-<p>This is real data and each month's CSV file size contains about 14 million trips and  ranges from 800Mb to 2.5GB. It turns out that the data is not 100% clean and the schema has changed over time. This is not apparent from the information provided on the website. The research and profiling exercise can be done many ways. They are all tedious and iterative so I do not expect everyone to spend time repeating these steps. You can jump ahead to working with the cleaned data if you want but the next stage gives one example on how the data can be cleaned up. In an earlier iteration of this exercise I loaded up the data into Redshift and figured out some of the cleansing reqiured. Tableau itself can be used at this stage as you will see. Some blogs used Postgres.</p>
+<p>This is real data and each month’s CSV file size contains about 14 million trips and  ranges from 800Mb to 2.5GB. It turns out that the data is not 100% clean and the schema has changed over time. This is not apparent from the information provided on the website. The research and profiling exercise can be done many ways. They are all tedious and iterative so I do not expect everyone to spend time repeating these steps. You can jump ahead to working with the cleaned data if you want but the next stage gives one example on how the data can be cleaned up. In an earlier iteration of this exercise I loaded up the data into Redshift and figured out some of the cleansing reqiured. Tableau itself can be used at this stage as you will see. Some blogs used Postgres.</p>
 <h3>Step 1 - Use Athena and Tableau to Explore the Raw Data</h3>
 <h2>Summary</h2>
 <p>Now we have the Raw NYC Taxi Data in our own S3 bucket. In a traditional Data warehouse architecture this might be a staging database, or a file store (on a SAN) on a Staging Server. In the other cloud platforms this could be Google Cloud Storage or Azure Storage - Blob. In Hadoop Platforms like Cloudera and Horton this might be HDFS but increasingly the other Hadoop based Platforms also support cloud storage. Note that cloud storage is not always a drop in replacement for HDFS and the performance characteristics may be different from HDFS.</p>
 <h2>Next Exercise</h2>
-<p>In Exercise 2 we will create a compute engine to <a href="../exercise-2-build-a-data-preparation-pipeline/exercise-2-build-a-data-prep-pipeline.md">Clean and Optimize the Data</a></p></div></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-1fb66712b405c81b1d91.js","107818501498521":"component---src-templates-blog-post-js-eaa57329290e13f78bcb.js","35783957827783":"component---src-pages-index-js-45d9095ded31735c0554.js","60335399758886":"path----557518bd178906f8d58a.js","195516316214020":"path---01-27-2018-test-relative-images-3dad60aaa642b2937523.js","75153307507173":"path---script-kiddie-e42993f1d4a0e6d291d3.js","140559286549901":"path---polygon-test-09768f078ff50d4e3726.js","133522796427265":"path---mermaid-aff99de3085f91cf9523.js","144342403179678":"path---hello-world-8e4fe07e2170bccf715c.js","142629428675168":"path---index-1a8333d178f68a4ee3fd.js","114276838955818":"component---src-layouts-index-js-998b6983a18c6bc3d993.js"}/*]]>*/</script><script>/*<![CDATA[*/!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/commons-d41d8cd98f00b204e980.js","/app-1fb66712b405c81b1d91.js","/path---01-27-2018-test-relative-images-3dad60aaa642b2937523.js","/component---src-templates-blog-post-js-eaa57329290e13f78bcb.js","/component---src-layouts-index-js-998b6983a18c6bc3d993.js"])/*]]>*/</script></body></html>
+<p>In Exercise 2 we will create a compute engine to <a href="../exercise-2-build-a-data-preparation-pipeline/exercise-2-build-a-data-prep-pipeline.md">Clean and Optimize the Data</a></p></div></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-3098c5cc19cdcc8e7e11.js","107818501498521":"component---src-templates-blog-post-js-eaa57329290e13f78bcb.js","35783957827783":"component---src-pages-index-js-eb29fdf554454c112e1c.js","60335399758886":"path----557518bd178906f8d58a.js","195516316214020":"path---01-27-2018-test-relative-images-ef3c8919a971cbff3814.js","75153307507173":"path---script-kiddie-a6ff7395b384c4535f55.js","140559286549901":"path---polygon-test-a8f59cc783c90c4d9fcf.js","133522796427265":"path---mermaid-aff99de3085f91cf9523.js","144342403179678":"path---hello-world-8e4fe07e2170bccf715c.js","142629428675168":"path---index-b4c1a94eae1f2485afb3.js","114276838955818":"component---src-layouts-index-js-998b6983a18c6bc3d993.js"}/*]]>*/</script><script>/*<![CDATA[*/!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/commons-d41d8cd98f00b204e980.js","/app-3098c5cc19cdcc8e7e11.js","/path---01-27-2018-test-relative-images-ef3c8919a971cbff3814.js","/component---src-templates-blog-post-js-eaa57329290e13f78bcb.js","/component---src-layouts-index-js-998b6983a18c6bc3d993.js"])/*]]>*/</script></body></html>
