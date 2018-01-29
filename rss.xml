@@ -1,4 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Mon, 29 Jan 2018 21:47:24 GMT</lastBuildDate><item><title><![CDATA[Tableau's Oldest Script Kiddie]]></title><description><![CDATA[Where I test out a new way of introducing myself]]></description><link>https://blog.iseevizz.es//posts/tableaus-oldest-script-kiddie/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/tableaus-oldest-script-kiddie/</guid><pubDate>Sat, 27 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I tell people I am Tableau’s oldest Script Kiddie. I have a degree in Software Engineering but I have never been a professional developer or programmer. I am not saying I create scripts to attack computer systems or deface websites. What I am saying is that I am unskilled in virtually all the technical skills required of a modern developer. But I can copy/paste code like a Pro. I have copy/pasted in many popular languages like Python, Javascript and SQL. Some languages I have copy/pasted are not so popular or gone forever - MDX, Occam, Pascal, DBase. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Mon, 29 Jan 2018 21:49:41 GMT</lastBuildDate><item><title><![CDATA[Integrating GraphViz into Markdown]]></title><description><![CDATA[Graphviz is open source graph vizualation software. Graph model can be use to represent anything from simple flowcharts, to ERDs. I want to see if I can incorporate graphs into my blog content]]></description><link>https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</guid><pubDate>Mon, 29 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.graphviz.org&quot;&gt;Graphviz&lt;/a&gt; graphs can be represented as text using the DOT language. What-if you could take DOT language and transform it into images in a markdown document?&lt;/p&gt;
+&lt;p&gt;One way might be to generate the images as png/jpg or other format ahead of time then embed the image. Another way might be to embed the code directly in the markdown document as fenced code blocks and do some processing behind the scenes to generate the image or an SVG element in the HTML that gets generated in the pipeline that transforms markdown to HTML. In my case I am using Visual Studio Code and Gatsby to generate a static site on Github Pages. This means there a hooks in many different places to acheive these goals and more. &lt;/p&gt;
+&lt;p&gt;There are hooks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Visual Studio Code to add extensions&lt;/li&gt;
+&lt;li&gt;In Gatsby to add transform and other plugins&lt;/li&gt;
+&lt;li&gt;In React becuase Gatsby is based on React&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The image workflow for Graphviz could go something like this:&lt;/p&gt;
+&lt;p&gt;Add the &lt;a href=&quot;https://github.com/EFanZh/Graphviz-Preview&quot;&gt;GraphViz Preview extension&lt;/a&gt; to VSC. This alows a DOT file to be rendered as an image in another VSC pane.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a DOT file&lt;/li&gt;
+&lt;li&gt;In VSC open the dot file and preview the graph&lt;/li&gt;
+&lt;li&gt;Use Snagit to capture the preview&lt;/li&gt;
+&lt;li&gt;Paste the Preview link into index.md&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is not perfect but it works:&lt;/p&gt;
+&lt;p&gt;Here is a graph created using the above workflow:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/graphviz-previerw-capture-16be0ac5a0e2a5a682985977a65aca6a-09400.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 772px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 6.994818652849741%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAPklEQVQI1xXJQQqAMAwEQP//S4VNWpI1hYjRnkpvA3O0lsB0T/dbtUQ+s4ckUORG76X6i7xjBJBmFbH3vLgAnIo3cFJLN5wAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;graphviz previerw capture&quot;
+        title=&quot;&quot;
+        src=&quot;/static/graphviz-previerw-capture-16be0ac5a0e2a5a682985977a65aca6a-09400.png&quot;
+        srcset=&quot;/static/graphviz-previerw-capture-16be0ac5a0e2a5a682985977a65aca6a-a375f.png 240w,
+/static/graphviz-previerw-capture-16be0ac5a0e2a5a682985977a65aca6a-f640c.png 480w,
+/static/graphviz-previerw-capture-16be0ac5a0e2a5a682985977a65aca6a-09400.png 772w&quot;
+        sizes=&quot;(max-width: 772px) 100vw, 772px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The current VSC extension uses the graphviz dot bin to generate svg and emded it in a preview window. I wonder if I can capture the SVG and embed that in my document or save as an image file automatically?&lt;/p&gt;
+&lt;p&gt;Is there a better workflow? I have tried a gatsby add in that supports mermaid which allows you to create a fenced code code block that uses the merlin syntax but it does not actually work seamlessly with my gatsby installation and startter kit for some reasons that I have not quite figured out.&lt;/p&gt;
+&lt;p&gt;Here is another possible workflow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install a run shell command like …&lt;/li&gt;
+&lt;li&gt;Ensure dot is on the path&lt;/li&gt;
+&lt;li&gt;Run a shell command from the Command Palette like &lt;code&gt;dot -Tpng -o./images/sample.png sample.dot&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With our sample.dot &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-dot&quot;&gt;&lt;code&gt;digraph graphname {
+    rankdir=LR
+    bgcolor=&quot;transparent&quot;
+    node 
+    [
+        margin=0.2 fontcolor=blue fontsize=20 width=0.5 shape=box
+        style=&quot;filled&quot;
+        fillcolor=&quot;white&quot;
+    ]
+     &quot;Raw Data&quot; -&gt; &quot;Raw Storage&quot; -&gt; Process -&gt; &quot;Clean Storage&quot; -&gt; &quot;Query&quot; -&gt; Insight;
+ }&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;this creates the following png file:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-faf14.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 7.006369426751593%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsSAAALEgHS3X78AAAAXElEQVQI1wFRAK7/AOXl787n5/n04eHrm8/P0WDm5vbt5ub37ePj7q/FxcZO6Oj29+jo87i5ubdI6en37OXl9+Hm5vXrx8fFR+Li78Do6PXUyMjARuHh8+Hj4/PCpmpCs5o16zgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;sample2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-c83f1.png&quot;
+        srcset=&quot;/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-569e3.png 240w,
+/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-93400.png 480w,
+/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-c83f1.png 960w,
+/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-faf14.png 1099w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;That’s pretty nice. It needs testing with a wide variety of graphs but it feels like it could be enhance into an extension that can be run easily without leaving VSC or your editing flow.&lt;/p&gt;
+&lt;p&gt;Here is another sample:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/large-graph-0ce63eb292520259fe6be37c70b1af15-cde55.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 923px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 33.04442036836403%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAAA0ElEQVQoz22SiQ6EMAhE+/+/6n0faNk+trhqtglhUphhpAZNR0S0qiodx1GHYdC2bXWaJu26zu65AxPzPOu6rnocB1SNMRIxYwk0QCjL0oQgvTP1pmmuXNe19n2vWce0cpaAA4ruDgFIBC4RpUZ27EPg0bPvuwme5ymBKbikiQZ3sSyLkcFkBoO3bTPsLhmSODGbkpCVTZBpCIHdse+WDJm6i/nnp3rEVIqvw3/HhxRF8ViJfzoYERyn3t8Oby/1CA4vmfZzZf4GXw8Dbud65Q8p0B66/cFX2wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;large graph&quot;
+        title=&quot;&quot;
+        src=&quot;/static/large-graph-0ce63eb292520259fe6be37c70b1af15-cde55.png&quot;
+        srcset=&quot;/static/large-graph-0ce63eb292520259fe6be37c70b1af15-80b37.png 240w,
+/static/large-graph-0ce63eb292520259fe6be37c70b1af15-e884f.png 480w,
+/static/large-graph-0ce63eb292520259fe6be37c70b1af15-cde55.png 923w&quot;
+        sizes=&quot;(max-width: 923px) 100vw, 923px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Tableau's Oldest Script Kiddie]]></title><description><![CDATA[Where I test out a new way of introducing myself]]></description><link>https://blog.iseevizz.es//posts/tableaus-oldest-script-kiddie/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/tableaus-oldest-script-kiddie/</guid><pubDate>Sat, 27 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I tell people I am Tableau’s oldest Script Kiddie. I have a degree in Software Engineering but I have never been a professional developer or programmer. I am not saying I create scripts to attack computer systems or deface websites. What I am saying is that I am unskilled in virtually all the technical skills required of a modern developer. But I can copy/paste code like a Pro. I have copy/pasted in many popular languages like Python, Javascript and SQL. Some languages I have copy/pasted are not so popular or gone forever - MDX, Occam, Pascal, DBase. &lt;/p&gt;
 &lt;p&gt;When I learned the term &lt;em&gt;Script Kiddie&lt;/em&gt; something resonated. I think I liked the &lt;em&gt;Kiddie&lt;/em&gt; part. I have never wanted to me a manager or a CEO. I love being an ‘individial contributer’ I love learning. I am perpetually curious and in awe of nearly everything. Learning is one of my strengths. I learn by doing, trying, questioning and arguing (often arguing with myself).&lt;/p&gt;
 &lt;p&gt;Scipt Kiddies are usually teenagers but I realised that my approach to learning and my curiosity and excitment about things are the traits of a four year old. Maybe that’s why I have never felt comfortable as a manager. Would you let a four year old manage a team, or run a company? Most of of my past managers had the good sense not to let me manage.&lt;/p&gt;
 &lt;p&gt;But I had an epiphany to other day. This is one advantage of being like a four year old - you have epiphanies all the time! I realised that Tableau was founded by a bunch of four year olds. That might sound like a firing offense but I believe our founders are highly creative individuals. They have the traits that most four years. Most of are forced to suppress these traits when we ‘grow up’. Now I think about it Tableau has more four year olds than any other company I have ever worked in. How Cool is That!&lt;/p&gt;
