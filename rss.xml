@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Tue, 30 Jan 2018 02:48:53 GMT</lastBuildDate><item><title><![CDATA[Integrating GraphViz into Markdown]]></title><description><![CDATA[Graphviz is open source graph vizualation software. Graph model can be use to represent anything from simple flowcharts, to ERDs. I want to see if I can incorporate graphs into my blog content]]></description><link>https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</guid><pubDate>Mon, 29 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.graphviz.org&quot;&gt;Graphviz&lt;/a&gt; graphs can be represented as text using the DOT language. What-if you could take DOT language and transform it into images in a markdown document?&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Tue, 30 Jan 2018 02:51:08 GMT</lastBuildDate><item><title><![CDATA[Integrating GraphViz into Markdown]]></title><description><![CDATA[Graphviz is open source graph vizualation software. Graph model can be use to represent anything from simple flowcharts, to ERDs. I want to see if I can incorporate graphs into my blog content]]></description><link>https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</guid><pubDate>Mon, 29 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.graphviz.org&quot;&gt;Graphviz&lt;/a&gt; graphs can be represented as text using the DOT language. What-if you could take DOT language and transform it into images in a markdown document?&lt;/p&gt;
 &lt;p&gt;One way might be to generate the images as png/jpg or other format ahead of time then embed the image. Another way might be to embed the code directly in the markdown document as fenced code blocks and do some processing behind the scenes to generate the image or an SVG element in the HTML that gets generated in the pipeline that transforms markdown to HTML. In my case I am using Visual Studio Code and Gatsby to generate a static site on Github Pages. This means there a hooks in many different places to acheive these goals and more. &lt;/p&gt;
 &lt;p&gt;There are hooks:&lt;/p&gt;
 &lt;ul&gt;
@@ -53,9 +53,9 @@
 &lt;p&gt;Is there a better workflow? I have tried a gatsby add in that supports mermaid which allows you to create a fenced code code block that uses the merlin syntax but it does not actually work seamlessly with my gatsby installation and startter kit for some reasons that I have not quite figured out.&lt;/p&gt;
 &lt;p&gt;Here is another possible workflow:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Install a run shell command like …&lt;/li&gt;
+&lt;li&gt;Install a run shell command like &lt;a href=&quot;https://github.com/bbenoist/vscode-shell.git&quot;&gt;Shell for VSCode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Ensure dot is on the path&lt;/li&gt;
-&lt;li&gt;Run a shell command from the Command Palette like &lt;code&gt;dot -Tpng -o./images/sample.png sample.dot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run a shell command from the Command Palette like &lt;code&gt;dot -Tpng -o./images/sample2.png sample.dot&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;With our sample.dot &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -75,7 +75,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-faf14.png&quot;
+    href=&quot;/static/sample2-a51037274713ba1e7bdd5ac40076dcb5-0b47f.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -83,23 +83,22 @@
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 672px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 7.006369426751593%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsSAAALEgHS3X78AAAAXElEQVQI1wFRAK7/AOXl787n5/n04eHrm8/P0WDm5vbt5ub37ePj7q/FxcZO6Oj29+jo87i5ubdI6en37OXl9+Hm5vXrx8fFR+Li78Do6PXUyMjARuHh8+Hj4/PCpmpCs5o16zgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 7.440476190476191%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsSAAALEgHS3X78AAAAXElEQVQI1wFRAK7/AODg7Mbh4fb22NjgeLy8v1ji4vTs39/18NfX4X66urxN5eX1/+Li7Kifn5c24uLw39/f9ujh4fHNnp6RL9zc683k5PLEmJiKMN3d7tjf3+/PJT8/KQvD4XgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;sample2&quot;
         title=&quot;&quot;
-        src=&quot;/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-c83f1.png&quot;
-        srcset=&quot;/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-569e3.png 240w,
-/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-93400.png 480w,
-/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-c83f1.png 960w,
-/static/sample2-2a0c4458e21c99ad3edc41c87dcee53e-faf14.png 1099w&quot;
-        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+        src=&quot;/static/sample2-a51037274713ba1e7bdd5ac40076dcb5-0b47f.png&quot;
+        srcset=&quot;/static/sample2-a51037274713ba1e7bdd5ac40076dcb5-84460.png 240w,
+/static/sample2-a51037274713ba1e7bdd5ac40076dcb5-eede1.png 480w,
+/static/sample2-a51037274713ba1e7bdd5ac40076dcb5-0b47f.png 672w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
