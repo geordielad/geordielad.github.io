@@ -1,4 +1,149 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Thu, 01 Feb 2018 04:14:44 GMT</lastBuildDate><item><title><![CDATA[Integrating GraphViz into Markdown]]></title><description><![CDATA[Graphviz is open source graph vizualation software. Graph model can be use to represent anything from simple flowcharts, to ERDs. I want to see if I can incorporate graphs into my blog content]]></description><link>https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</guid><pubDate>Mon, 29 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.graphviz.org&quot;&gt;Graphviz&lt;/a&gt; graphs can be represented as text using the DOT language. What-if you could take DOT language and transform it into images in a markdown document?&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Thu, 01 Feb 2018 04:18:29 GMT</lastBuildDate><item><title><![CDATA[TensorFlow Lightning Talk]]></title><description><![CDATA[Description]]></description><link>https://blog.iseevizz.es//posts/Tensorflow-Lightning-Talk/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/Tensorflow-Lightning-Talk/</guid><pubDate>Thu, 01 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;These notes cover a quick introduction to TensorFlow created for a Lightning Talk presented to the Deep Learning Study Group.&lt;/p&gt;
+&lt;p&gt;Soon after starting the Coursera DL Course I was also finding references to TensorFlow and started watching some &lt;a href=&quot;https://www.youtube.com/playlist?list=PLOU2XLYxmsIKGc_NBoIhTn2Qhraji53cv&quot;&gt;YouTube videos&lt;/a&gt; talking about Tensorflow. At the time I was unaware that the course would use TensorFlow.&lt;/p&gt;
+&lt;h2&gt;Deep Learning Frameworks&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-3bef9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 768px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 127.734375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAAsSAAALEgHS3X78AAAEQklEQVRIx2WVWU9bVxSF+Wt9bmnmRuqQhJYOKmpe8xaa0EZtmgTalD41Un9B81IpDwQDHvCAjcHGZjKewfNsQIy759twLkSJdMWVde7a317r7J2BrXRG8oXixZPPS7FYlEKhoA/vPPb3nZ0dWV9fl1QqJaVSSf+ura1JNpuVk5MTGdjaSEq3XRf7r1Ta0YPdblcP9ft9OTg40A/57fj4WKLRqITDYTk9PZXNzU3xeDyyvb2t3w9M/huWf97E5O//YjL5OiqpXFn6va40Gg3JZDLSbDal1+spba1Wk06no79vbW1Ju92WcrmsxJxXwetj0/L50zkZHJ2SDx68EX8sI3v9jqEsy+LiolSrVRVZWlpSiv39faWCmHcEIW61Wko88NW4Vz55MiMf//hWbvw8K/5lU7lZNxWbEovFtDKC8Xhcrdjd3VXPksmkvuMpgpxTwaEXHrn9ZFYFrz52SWglK3u9jjRNxeXlZa28t7cnq6urSnh0dKR0tIm3lUpF6fFXBe8998iXhnLwXNAXTRnCmqlcUsF6va7VoSVpqBBLJBIaGEUIyCG8+8wIvvA6hMF4Vj2s1eoqSGVCQZD2Dg8PNRDahpCCnMMWDeXuM7dAOTj6Vq6NzYh3cUNajaqpfOEND21BiDhiKysrWoyWeecGOB6S8kcmZQjDqwU52O9L1RzgQ9rioU0St4S5XE7f+e0dwju/ueXGTy5tGUJP5IwQD6GyhKTMpFhCUuYdDylGeDopn/46J1cfTZ95aAQDsbT02k1NmXuIGEEQAtcGKlImdTyEEEG60JZp9/qY6zyUGZPyppS3C+bCVmRhYUE9Ylrw87KHFLCEnHM8/OZ3n5D0hw+n5Mojl0SMh922abN5drHxhuoYf9lDRK2HnGMM1cMhc2W+NqI3jY83zaTgYamYl7Iho2XahDASieiygIp2ISRlfIUeYSflH/4K6DM8MS+hRE5DabXazoxaD/mISWE5pNNpJaRV24lDODLpF2b625d+8S9tyk4xJyUz9KFQSC8zweATrVpCRCDEVztRSjg84ZPvXs7r6F05n5RmvWIO95wQIMRDxNmH1kNo3yOEjJSZFFL2RNZlu5A17dW0TUvIvNIqVBDyIMKexF/W2LmHXp2Ua4+nzQWfkXAyryl3Ol2lsB5CSFv4hjABWUI7hkrIpqFlfBwa98nswpoUcxklpBVStoSIXCbkHULCc+7hHbMcvv/TLyPmYcEGzMZu1MrqIYRcGZsywpZwY2PDSfmdWWbTcA+HzF8EXcGEFPMZcw+r2gqTQqv4ZD1kjm0QEAaDwQsPhye88oVZEHh4y2zuYDyjC7bb6zuEbGwI+YiUuYM25ff24S1Dde+5Vz576pbbv7hlat5slVxaCZkUZvXyPbSEFLCEgUBAvVbCh6/mZPSVW0bGp+T+H9PiiyQkn83o/3o2FCYEcVomdQQtPQVZbbbl/wFuZhhyl85qEwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;DL libraries rank jpg 768x981&quot;
+        title=&quot;&quot;
+        src=&quot;/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-3bef9.png&quot;
+        srcset=&quot;/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-4f55c.png 240w,
+/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-7c32b.png 480w,
+/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-3bef9.png 768w&quot;
+        sizes=&quot;(max-width: 768px) 100vw, 768px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The table above was taken from this article: &lt;a href=&quot;https://blog.thedataincubator.com/2017/10/ranking-popular-deep-learning-libraries-for-data-science/&quot;&gt;Ranking Popular Deep Learning Libraries for Data Science&lt;/a&gt; had TensoFlow way out in the lead:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://keras.io/&quot;&gt;Keras&lt;/a&gt; was 2nd. Keras is not really a competing framework but a higher level library that can integrate with TF. Last year the author of Keras Francois Chollet &lt;a href=&quot;http://www.fast.ai/2017/01/03/keras/&quot;&gt;announced&lt;/a&gt; that Keras would be added to TF &lt;/p&gt;
+&lt;h2&gt;TensorFlow in 5 minutes&lt;/h2&gt;
+&lt;h3&gt;Execution Model&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.oreilly.com/learning/hello-tensorflow&quot;&gt;This O’Reilly Article&lt;/a&gt; explains the TC execution model. It’s a delayed execution model. In TF you define a graph then run it.&lt;/p&gt;
+&lt;p&gt;Delayed Execution has it’s detractors and maybe Google is listening because there are efforts to support &lt;a href=&quot;https://research.googleblog.com/2017/10/eager-execution-imperative-define-by.html&quot;&gt;eager execution in TF&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I do not consider myself an advanced programmer but I don’t find the Delayed Execution model that daunting. But perhaps thats because I use Tableau!&lt;/p&gt;
+&lt;h2&gt;Why Tensorflow?&lt;/h2&gt;
+&lt;p&gt;What makes TensorFlow so popular? I don’t know! I have not even looked at any of the other Libraries but I suspect the depth and breadth, performance, and community have a lot to do with it. I get the impression TensorFlow is &lt;em&gt;democratising&lt;/em&gt; Deep Learning.&lt;/p&gt;
+&lt;p&gt;BTW &lt;a href=&quot;https://aws.amazon.com/mxnet/&quot;&gt;AWS adopted MXNet&lt;/a&gt; and proposed it as an &lt;a href=&quot;https://mxnet.apache.org/&quot;&gt;Apache Incubator project&lt;/a&gt;). Microsoft seems to be using &lt;a href=&quot;https://github.com/Microsoft/CNTK&quot;&gt;CNTK or Cognative Toolkit&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tensorboard&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard&quot;&gt;TensorBoard&lt;/a&gt; provides a way to vizualize Deep Learning. &lt;a href=&quot;https://youtu.be/eBbEDRsCmv4&quot;&gt;Here&lt;/a&gt; is a YouTube Introduction.&lt;/p&gt;
+&lt;p&gt;As a Tabloid you might be interested in seeing how data vizualization can be applied to help understand complicated processes.&lt;/p&gt;
+&lt;h2&gt;Installing TensorFlow in a Windows Lab PC with a GPU&lt;/h2&gt;
+&lt;h3&gt;PC&lt;/h3&gt;
+&lt;p&gt;My Home Lab server not state of the art. It is a 2013 Intel i7 six core with 64GB of memory running Windows 2012. It did not have a great graphics card.&lt;/p&gt;
+&lt;h3&gt;Which GPU to Buy a GPU&lt;/h3&gt;
+&lt;p&gt;GPUs can be expensive. All the Bitminers are buying them up so the prices are inflated. But for learning Tensorflow a budget GPU can provide significant improvement over a CPU only setup even a six core.&lt;/p&gt;
+&lt;p&gt;This &lt;a href=&quot;http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/&quot;&gt;blog post&lt;/a&gt; by Tim Dettmers has a good overview of the available GPUs as of April 2017 and his experiences with some configurations. &lt;/p&gt;
+&lt;p&gt;I bought an EVGA 1050 Ti from &lt;a href=&quot;https://www.amazon.com/EVGA-GeForce-Support-Graphics-04G-P4-6253-KR/dp/B01MF7EQJZ&quot;&gt;Amazon&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The 1050Ti is a Pascal based GPU.&lt;/p&gt;
+&lt;p&gt;NVidia is best for Tensorflow because
+It cost me $160 new in November 2017. When I checked on January 31st it is selling used for $181&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-60bc9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 44.713930348258714%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABh0lEQVQoz1WRvU7DMBSF81ZIICZGFhBCDAwIwQpvgBADKoi/UqlUqAjG8h5pKQsDbCwFIRq31IkdO45jp7ScuJWAE9u6sf3Z5157OrOUhpTSAXoYxXGss8wYY63NIVt8iKz7/9es9Xrd92QipXVmRk7D3EqpBhRncSlF7MQ5/w04F0J40aAXhtFlpdpstTudt1ar7bf88XiskqhPOl8hl0rjXJma4XehoRM8YfS63SAIyO7O1lW1dN+on50e1GpVwFqrr7APOFEpkjAmz41Gn8Bwhz1eIvRrt3lY2rmrV06O9xcX528bJSwg8ZCGcMyiSAiplWDkQ3FqMiRnpvDnR+9t8LixuVQp10rHJ7PzM0flPSzgNkJ6ASEkIIwxKSXKgiIZJwQF7C7JfL/52H64rt9sbG7Pzi34zQfMU55woVKdIUcH5KM/msKTCLUoX5yvriyvry2/PD9hJuaCcYaGAisIr1oUCu+E2hV8ATvyGyNjkUo4TivsJBmPFEyBStPUUVPBAmDs+QGmGuMVgJtxBAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;amazon gtx1050 page&quot;
+        title=&quot;&quot;
+        src=&quot;/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-c83f1.png&quot;
+        srcset=&quot;/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-569e3.png 240w,
+/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-93400.png 480w,
+/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-c83f1.png 960w,
+/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-23e13.png 1440w,
+/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-60bc9.png 1608w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;[Show screenshot of CPU training v GPU training]&lt;/p&gt;
+&lt;h3&gt;Installing Tensorflow and Prequisite Software&lt;/h3&gt;
+&lt;p&gt;I followed the &lt;a href=&quot;https://www.tensorflow.org/install/install_windows&quot;&gt;instructions&lt;/a&gt; from the Tensorflow site.&lt;/p&gt;
+&lt;p&gt;After installing your GPU Card:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python Anaconda&lt;/li&gt;
+&lt;li&gt;NVidia CUDA&lt;/li&gt;
+&lt;li&gt;NVidia Drivers&lt;/li&gt;
+&lt;li&gt;cuDNN &lt;/li&gt;
+&lt;li&gt;TensorFlow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;An Example Application of Tensorflow&lt;/h2&gt;
+&lt;h3&gt;Donkey Car&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-cfd28.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 74.8046875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABoqpm9QiG/wD/xAAZEAACAwEAAAAAAAAAAAAAAAABAwACERL/2gAIAQEAAQUCa3mJbt8hWLlSjS3c/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8BZ//EABYRAAMAAAAAAAAAAAAAAAAAAAEQMf/aAAgBAgEBPwERf//EABkQAAIDAQAAAAAAAAAAAAAAAAABEBEiMf/aAAgBAQAGPwJGn2LZcf/EABsQAQADAAMBAAAAAAAAAAAAAAEAESExQWFx/9oACAEBAAE/IcodXqBzDgz2PzKYbGbKrIx//9oADAMBAAIAAwAAABA73//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPxAOz//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCoa//EABkQAQEBAQEBAAAAAAAAAAAAAAERIQBhMf/aAAgBAQABPxARiAVRDpxQShiY086rTD7yOhE+w4RTeBo+8hAzO//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Donkey Car&quot;
+        title=&quot;&quot;
+        src=&quot;/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-d564d.jpg&quot;
+        srcset=&quot;/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-865fd.jpg 240w,
+/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-d40a0.jpg 480w,
+/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-d564d.jpg 960w,
+/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-cfd28.jpg 1024w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The Donkey Car platform is DIY Autonomous Remote Control (RC) car driven by a Raspberry PI and trained using Tensorflow/Keras. The project was created by &lt;a href=&quot;https://github.com/wroscoe/donkey&quot;&gt;Willam Roscoe&lt;/a&gt; and Adam Conway.&lt;/p&gt;
+&lt;h4&gt;Where does DL and Tensorflow come in?&lt;/h4&gt;
+&lt;p&gt;The car is a modified hobby RC car with a camera and Raspberry Pi added to provide the autonomous smarts. The car is trained by driving the car around a track, capturing the video then training a DL netowrk using Keras/Tensorflow. The actual trainng is done on a host PC then the trained network is transferred back to the Raspberry Pi. A well trained car can then drive around the track without human intervention.&lt;/p&gt;
+&lt;p&gt;You can get more details from the &lt;a href=&quot;http://www.donkeycar.com/&quot;&gt;Donkey Car Home Page&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Integrating GraphViz into Markdown]]></title><description><![CDATA[Graphviz is open source graph vizualation software. Graph model can be use to represent anything from simple flowcharts, to ERDs. I want to see if I can incorporate graphs into my blog content]]></description><link>https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/2018-01-29---GraphViz-Test/</guid><pubDate>Mon, 29 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.graphviz.org&quot;&gt;Graphviz&lt;/a&gt; graphs can be represented as text using the DOT language. What-if you could take DOT language and transform it into images in a markdown document?&lt;/p&gt;
 &lt;p&gt;One way might be to generate the images as png/jpg or other format ahead of time then embed the image. Another way might be to embed the code directly in the markdown document as fenced code blocks and do some processing behind the scenes to generate the image or an SVG element in the HTML that gets generated in the pipeline that transforms markdown to HTML. In my case I am using Visual Studio Code and Gatsby to generate a static site on Github Pages. This means there a hooks in many different places to acheive these goals and more. &lt;/p&gt;
 &lt;p&gt;There are hooks:&lt;/p&gt;
 &lt;ul&gt;
@@ -263,149 +408,4 @@ graph LR
      RS[Raw Storage] --&gt; P[Process]
      P[Process] --&gt; CS[Clean Storage]
      CS[Clean Storage] --&gt; Q[Query]
-     Q[Query] --&gt; I[Insight]&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TensorFlow Lightning Talk]]></title><description><![CDATA[Description]]></description><link>https://blog.iseevizz.es//posts/Tensorflow-Lightning-Talk/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/Tensorflow-Lightning-Talk/</guid><pubDate>Sun, 01 Jan 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;These notes cover a quick introduction to TensorFlow created for a Lightning Talk presented to the Deep Learning Study Group.&lt;/p&gt;
-&lt;p&gt;Soon after starting the Coursera DL Course I was also finding references to TensorFlow and started watching some &lt;a href=&quot;https://www.youtube.com/playlist?list=PLOU2XLYxmsIKGc_NBoIhTn2Qhraji53cv&quot;&gt;YouTube videos&lt;/a&gt; talking about Tensorflow. At the time I was unaware that the course would use TensorFlow.&lt;/p&gt;
-&lt;h2&gt;Deep Learning Frameworks&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-3bef9.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 768px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 127.734375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAAsSAAALEgHS3X78AAAEQklEQVRIx2WVWU9bVxSF+Wt9bmnmRuqQhJYOKmpe8xaa0EZtmgTalD41Un9B81IpDwQDHvCAjcHGZjKewfNsQIy759twLkSJdMWVde7a317r7J2BrXRG8oXixZPPS7FYlEKhoA/vPPb3nZ0dWV9fl1QqJaVSSf+ura1JNpuVk5MTGdjaSEq3XRf7r1Ta0YPdblcP9ft9OTg40A/57fj4WKLRqITDYTk9PZXNzU3xeDyyvb2t3w9M/huWf97E5O//YjL5OiqpXFn6va40Gg3JZDLSbDal1+spba1Wk06no79vbW1Ju92WcrmsxJxXwetj0/L50zkZHJ2SDx68EX8sI3v9jqEsy+LiolSrVRVZWlpSiv39faWCmHcEIW61Wko88NW4Vz55MiMf//hWbvw8K/5lU7lZNxWbEovFtDKC8Xhcrdjd3VXPksmkvuMpgpxTwaEXHrn9ZFYFrz52SWglK3u9jjRNxeXlZa28t7cnq6urSnh0dKR0tIm3lUpF6fFXBe8998iXhnLwXNAXTRnCmqlcUsF6va7VoSVpqBBLJBIaGEUIyCG8+8wIvvA6hMF4Vj2s1eoqSGVCQZD2Dg8PNRDahpCCnMMWDeXuM7dAOTj6Vq6NzYh3cUNajaqpfOEND21BiDhiKysrWoyWeecGOB6S8kcmZQjDqwU52O9L1RzgQ9rioU0St4S5XE7f+e0dwju/ueXGTy5tGUJP5IwQD6GyhKTMpFhCUuYdDylGeDopn/46J1cfTZ95aAQDsbT02k1NmXuIGEEQAtcGKlImdTyEEEG60JZp9/qY6zyUGZPyppS3C+bCVmRhYUE9Ylrw87KHFLCEnHM8/OZ3n5D0hw+n5Mojl0SMh922abN5drHxhuoYf9lDRK2HnGMM1cMhc2W+NqI3jY83zaTgYamYl7Iho2XahDASieiygIp2ISRlfIUeYSflH/4K6DM8MS+hRE5DabXazoxaD/mISWE5pNNpJaRV24lDODLpF2b625d+8S9tyk4xJyUz9KFQSC8zweATrVpCRCDEVztRSjg84ZPvXs7r6F05n5RmvWIO95wQIMRDxNmH1kNo3yOEjJSZFFL2RNZlu5A17dW0TUvIvNIqVBDyIMKexF/W2LmHXp2Ua4+nzQWfkXAyryl3Ol2lsB5CSFv4hjABWUI7hkrIpqFlfBwa98nswpoUcxklpBVStoSIXCbkHULCc+7hHbMcvv/TLyPmYcEGzMZu1MrqIYRcGZsywpZwY2PDSfmdWWbTcA+HzF8EXcGEFPMZcw+r2gqTQqv4ZD1kjm0QEAaDwQsPhye88oVZEHh4y2zuYDyjC7bb6zuEbGwI+YiUuYM25ff24S1Dde+5Vz576pbbv7hlat5slVxaCZkUZvXyPbSEFLCEgUBAvVbCh6/mZPSVW0bGp+T+H9PiiyQkn83o/3o2FCYEcVomdQQtPQVZbbbl/wFuZhhyl85qEwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;DL libraries rank jpg 768x981&quot;
-        title=&quot;&quot;
-        src=&quot;/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-3bef9.png&quot;
-        srcset=&quot;/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-4f55c.png 240w,
-/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-7c32b.png 480w,
-/static/DL_libraries_rank.jpg-768x981-b593883aa70dd7536a6cf97cac884281-3bef9.png 768w&quot;
-        sizes=&quot;(max-width: 768px) 100vw, 768px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;The table above was taken from this article: &lt;a href=&quot;https://blog.thedataincubator.com/2017/10/ranking-popular-deep-learning-libraries-for-data-science/&quot;&gt;Ranking Popular Deep Learning Libraries for Data Science&lt;/a&gt; had TensoFlow way out in the lead:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://keras.io/&quot;&gt;Keras&lt;/a&gt; was 2nd. Keras is not really a competing framework but a higher level library that can integrate with TF. Last year the author of Keras Francois Chollet &lt;a href=&quot;http://www.fast.ai/2017/01/03/keras/&quot;&gt;announced&lt;/a&gt; that Keras would be added to TF &lt;/p&gt;
-&lt;h2&gt;TensorFlow in 5 minutes&lt;/h2&gt;
-&lt;h3&gt;Execution Model&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.oreilly.com/learning/hello-tensorflow&quot;&gt;This O’Reilly Article&lt;/a&gt; explains the TC execution model. It’s a delayed execution model. In TF you define a graph then run it.&lt;/p&gt;
-&lt;p&gt;Delayed Execution has it’s detractors and maybe Google is listening because there are efforts to support &lt;a href=&quot;https://research.googleblog.com/2017/10/eager-execution-imperative-define-by.html&quot;&gt;eager execution in TF&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I do not consider myself an advanced programmer but I don’t find the Delayed Execution model that daunting. But perhaps thats because I use Tableau!&lt;/p&gt;
-&lt;h2&gt;Why Tensorflow?&lt;/h2&gt;
-&lt;p&gt;What makes TensorFlow so popular? I don’t know! I have not even looked at any of the other Libraries but I suspect the depth and breadth, performance, and community have a lot to do with it. I get the impression TensorFlow is &lt;em&gt;democratising&lt;/em&gt; Deep Learning.&lt;/p&gt;
-&lt;p&gt;BTW &lt;a href=&quot;https://aws.amazon.com/mxnet/&quot;&gt;AWS adopted MXNet&lt;/a&gt; and proposed it as an &lt;a href=&quot;https://mxnet.apache.org/&quot;&gt;Apache Incubator project&lt;/a&gt;). Microsoft seems to be using &lt;a href=&quot;https://github.com/Microsoft/CNTK&quot;&gt;CNTK or Cognative Toolkit&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Tensorboard&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard&quot;&gt;TensorBoard&lt;/a&gt; provides a way to vizualize Deep Learning. &lt;a href=&quot;https://youtu.be/eBbEDRsCmv4&quot;&gt;Here&lt;/a&gt; is a YouTube Introduction.&lt;/p&gt;
-&lt;p&gt;As a Tabloid you might be interested in seeing how data vizualization can be applied to help understand complicated processes.&lt;/p&gt;
-&lt;h2&gt;Installing TensorFlow in a Windows Lab PC with a GPU&lt;/h2&gt;
-&lt;h3&gt;PC&lt;/h3&gt;
-&lt;p&gt;My Home Lab server not state of the art. It is a 2013 Intel i7 six core with 64GB of memory running Windows 2012. It did not have a great graphics card.&lt;/p&gt;
-&lt;h3&gt;Which GPU to Buy a GPU&lt;/h3&gt;
-&lt;p&gt;GPUs can be expensive. All the Bitminers are buying them up so the prices are inflated. But for learning Tensorflow a budget GPU can provide significant improvement over a CPU only setup even a six core.&lt;/p&gt;
-&lt;p&gt;This &lt;a href=&quot;http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/&quot;&gt;blog post&lt;/a&gt; by Tim Dettmers has a good overview of the available GPUs as of April 2017 and his experiences with some configurations. &lt;/p&gt;
-&lt;p&gt;I bought an EVGA 1050 Ti from &lt;a href=&quot;https://www.amazon.com/EVGA-GeForce-Support-Graphics-04G-P4-6253-KR/dp/B01MF7EQJZ&quot;&gt;Amazon&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The 1050Ti is a Pascal based GPU.&lt;/p&gt;
-&lt;p&gt;NVidia is best for Tensorflow because
-It cost me $160 new in November 2017. When I checked on January 31st it is selling used for $181&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-60bc9.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 44.713930348258714%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABh0lEQVQoz1WRvU7DMBSF81ZIICZGFhBCDAwIwQpvgBADKoi/UqlUqAjG8h5pKQsDbCwFIRq31IkdO45jp7ScuJWAE9u6sf3Z5157OrOUhpTSAXoYxXGss8wYY63NIVt8iKz7/9es9Xrd92QipXVmRk7D3EqpBhRncSlF7MQ5/w04F0J40aAXhtFlpdpstTudt1ar7bf88XiskqhPOl8hl0rjXJma4XehoRM8YfS63SAIyO7O1lW1dN+on50e1GpVwFqrr7APOFEpkjAmz41Gn8Bwhz1eIvRrt3lY2rmrV06O9xcX528bJSwg8ZCGcMyiSAiplWDkQ3FqMiRnpvDnR+9t8LixuVQp10rHJ7PzM0flPSzgNkJ6ASEkIIwxKSXKgiIZJwQF7C7JfL/52H64rt9sbG7Pzi34zQfMU55woVKdIUcH5KM/msKTCLUoX5yvriyvry2/PD9hJuaCcYaGAisIr1oUCu+E2hV8ATvyGyNjkUo4TivsJBmPFEyBStPUUVPBAmDs+QGmGuMVgJtxBAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;amazon gtx1050 page&quot;
-        title=&quot;&quot;
-        src=&quot;/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-c83f1.png&quot;
-        srcset=&quot;/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-569e3.png 240w,
-/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-93400.png 480w,
-/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-c83f1.png 960w,
-/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-23e13.png 1440w,
-/static/amazon-gtx1050-page-cda8feab2474c01face0ede5d2956037-60bc9.png 1608w&quot;
-        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;[Show screenshot of CPU training v GPU training]&lt;/p&gt;
-&lt;h3&gt;Installing Tensorflow and Prequisite Software&lt;/h3&gt;
-&lt;p&gt;I followed the &lt;a href=&quot;https://www.tensorflow.org/install/install_windows&quot;&gt;instructions&lt;/a&gt; from the Tensorflow site.&lt;/p&gt;
-&lt;p&gt;After installing your GPU Card:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Python Anaconda&lt;/li&gt;
-&lt;li&gt;NVidia CUDA&lt;/li&gt;
-&lt;li&gt;NVidia Drivers&lt;/li&gt;
-&lt;li&gt;cuDNN &lt;/li&gt;
-&lt;li&gt;TensorFlow&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;An Example Application of Tensorflow&lt;/h2&gt;
-&lt;h3&gt;Donkey Car&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-cfd28.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 74.8046875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABoqpm9QiG/wD/xAAZEAACAwEAAAAAAAAAAAAAAAABAwACERL/2gAIAQEAAQUCa3mJbt8hWLlSjS3c/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8BZ//EABYRAAMAAAAAAAAAAAAAAAAAAAEQMf/aAAgBAgEBPwERf//EABkQAAIDAQAAAAAAAAAAAAAAAAABEBEiMf/aAAgBAQAGPwJGn2LZcf/EABsQAQADAAMBAAAAAAAAAAAAAAEAESExQWFx/9oACAEBAAE/IcodXqBzDgz2PzKYbGbKrIx//9oADAMBAAIAAwAAABA73//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPxAOz//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCoa//EABkQAQEBAQEBAAAAAAAAAAAAAAERIQBhMf/aAAgBAQABPxARiAVRDpxQShiY086rTD7yOhE+w4RTeBo+8hAzO//Z&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Donkey Car&quot;
-        title=&quot;&quot;
-        src=&quot;/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-d564d.jpg&quot;
-        srcset=&quot;/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-865fd.jpg 240w,
-/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-d40a0.jpg 480w,
-/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-d564d.jpg 960w,
-/static/donkey-car-make-article-545d8b33713bc1981b043a35af6f6397-cfd28.jpg 1024w&quot;
-        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;The Donkey Car platform is DIY Autonomous Remote Control (RC) car driven by a Raspberry PI and trained using Tensorflow/Keras. The project was created by &lt;a href=&quot;https://github.com/wroscoe/donkey&quot;&gt;Willam Roscoe&lt;/a&gt; and Adam Conway.&lt;/p&gt;
-&lt;h4&gt;Where does DL and Tensorflow come in?&lt;/h4&gt;
-&lt;p&gt;The car is a modified hobby RC car with a camera and Raspberry Pi added to provide the autonomous smarts. The car is trained by driving the car around a track, capturing the video then training a DL netowrk using Keras/Tensorflow. The actual trainng is done on a host PC then the trained network is transferred back to the Raspberry Pi. A well trained car can then drive around the track without human intervention.&lt;/p&gt;
-&lt;p&gt;You can get more details from the &lt;a href=&quot;http://www.donkeycar.com/&quot;&gt;Donkey Car Home Page&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+     Q[Query] --&gt; I[Insight]&lt;/div&gt;</content:encoded></item></channel></rss>
