@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Fri, 02 Feb 2018 22:35:01 GMT</lastBuildDate><item><title><![CDATA[Enabling Tableau for SSL]]></title><description><![CDATA[One reason why you might get a certificate error after enabling SSL in Tableau Server]]></description><link>https://blog.iseevizz.es//posts/Tableau-SSL-CN-SAN/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/Tableau-SSL-CN-SAN/</guid><pubDate>Fri, 02 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What’s the problem?&lt;/h2&gt;
-&lt;p&gt;If you enable SSL for your Tableau Server you will need an SSL certificate for your Server. We provide some documentation in the &lt;a href=&quot;https://onlinehelp.tableau.com/current/server/en-us/ssl.htm&quot;&gt;Tableau Server Online Help&lt;/a&gt;. We even have some guidance on &lt;a href=&quot;https://onlinehelp.tableau.com/current/server/en-us/ssl_cert_create.htm&quot;&gt;generating a Certificate Signin Request (CSR)&lt;/a&gt;. In larger enterprises the Tableau Administrator will simply ask for the certificate to be provided by another team. That team generally knows the detailed requirements for the certificate but every now and then we see customers that end up with a certificate that does not work as expected. One of the things that can go wrong is that the certificate has the wrong server name in it’s Subject Alternate Name (SAN) field. The customer might believe the certificate should work because the right server name is in the Common Name (CN)field. This is no longer true for some web browsers dur to loopholes that have been closed. For example Chrome 58 no longer checks the CN when validating SSL Certificates. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Fri, 02 Feb 2018 22:58:04 GMT</lastBuildDate><item><title><![CDATA[Certificate Error After Enabling Tableau for SSL]]></title><description><![CDATA[One reason why you might get a certificate error after enabling SSL in Tableau Server]]></description><link>https://blog.iseevizz.es//posts/Tableau-SSL-CN-SAN/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/Tableau-SSL-CN-SAN/</guid><pubDate>Fri, 02 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What’s the problem?&lt;/h2&gt;
+&lt;p&gt;If you enable SSL for your Tableau Server you will need an SSL certificate for your Server. We provide some documentation in the &lt;a href=&quot;https://onlinehelp.tableau.com/current/server/en-us/ssl.htm&quot;&gt;Tableau Server Online Help&lt;/a&gt;. We even have some guidance on &lt;a href=&quot;https://onlinehelp.tableau.com/current/server/en-us/ssl_cert_create.htm&quot;&gt;generating a Certificate Signin Request (CSR)&lt;/a&gt;. In larger enterprises the Tableau Administrator will simply ask for the certificate to be provided by another team. That team generally knows the detailed requirements for the certificate but every now and then we see customers that end up with a certificate that does not work as expected. One of the things that can go wrong is that the certificate has the wrong server name in it’s Subject Alternate Name (SAN) field. The customer might believe the certificate should work because the right server name is in the Common Name (CN) field. This is no longer true for some web browsers due to loopholes that have been closed. For example in Chrome 58 and later the browser longer checks the CN when validating SSL Certificates. &lt;/p&gt;
 &lt;p&gt;You can get some details &lt;a href=&quot;https://www.thesslstore.com/blog/security-changes-in-chrome-58/&quot;&gt;here&lt;/a&gt; or from the &lt;a href=&quot;https://www.chromestatus.com/features/4981025180483584&quot;&gt;Chrome Platform Status Page&lt;/a&gt; or even from the &lt;a href=&quot;https://tools.ietf.org/html/rfc6125#section-6.4.4&quot;&gt;RFC&lt;/a&gt;. Thanks to my colleagues Josh and Matt for sharing some of these links when this issue came from a customer today.&lt;/p&gt;
 &lt;h2&gt;How will the Problem Show Up?&lt;/h2&gt;
 &lt;p&gt;You will get an error in your browser like this one from Internet Explorer&lt;/p&gt;
@@ -70,13 +70,13 @@
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;h2&gt;How can I Fix this Problem?&lt;/h2&gt;
-&lt;p&gt;This is not a Tableau problem so there is nothing you can do in Tableau. You will need a new certificate with your server name is in the SAN field.&lt;/p&gt;
-&lt;p&gt;Below are some working certificates to show how they use the SAN field.&lt;/p&gt;
-&lt;p&gt;Here is one Tableau’s certificates. First the CN then the SAN&lt;/p&gt;
+&lt;p&gt;This is a certificate problem so there is nothing you can do in Tableau. You will need a new certificate with your server name is in the SAN field.&lt;/p&gt;
+&lt;p&gt;Below are some working certificates to show how they use the SAN field. YOu can examine certificates from your web browser or you can use a tool like the &lt;a href=&quot;https://www.ssllabs.com/ssltest/index.html&quot;&gt;SSL Server Test&lt;/a&gt; from Qualsys.&lt;/p&gt;
+&lt;p&gt;Here is the result of the SSL Server test for tableau.com&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ss-cert-tableau-cn-8e6407a9a6cd19b85e198823abca232b-83ec1.png&quot;
+    href=&quot;/static/tableau-qualsys-result-55e981ad21358e2c045e1b6a32156b39-faf14.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -84,53 +84,23 @@
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 405px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 125.92592592592592%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADTElEQVQ4y5VU2Y7bNhT1p/ehSJE07VN/oC9FkWke0yRogzSoMzOx7PGMPWNrtXaJEkVR+2It7JUVu5NpiqYHF4RI8JDnXp3LSRTsAuyrO8W2rbZte9Yx1o/R913Xtf8MWK/rGmFrEgTItm3HdR0HURqFIfWQ5/sYglKa53n2Efn9yLMiIGjiIkeWJeR5GIe+78M52+1WkiRBFBFCZVmO/PQTJEDGQE6zBG6DTYoiO44TBAEZAGMAZyHXBV1RFLF76IekWJSQCRyTpllRFJqquQgBGWMcHABnAA2mSZKMBRgBpTmQg0lR5qYJFxJ2KNE4tm0HI5yo6+a+afuuhwrtj6iqMsAkCL1JVmRY25ia4nk+lMqxbRLSUV5d1Zqmq6oWRfF92U3TuC4K6EDOff58tfjAC5IsStvNdr3eGJYFV9dVdbta67qxb5pDqoMqGKqqEkWJUH8gu/yHu5sr3UIlSGs7GMtq3/UsL6rNVpQVVTOMnaopO13TTdNy0rwEmYPsNM8i5dLiOXsn1EX6qbzaENeOKviGbAjryDOxpVBX7Zsc/g4GclFmsxv+yUvz8Zv4+4v+6fkY7Ltz9nTafv0SP/4tfPI7/eY1/vZt8uh18NWL4IeLPaY5uGkgX18vn73XzzjyI5c/37JfNuzsboifr/dn8/DZDP80tX7dFn/o7J3BXu3YC7Hzw4SMBYuNW0da2Zpcxx5EFTr9vhhkl4mrigX19ynpKsgIylYztu+7ipIwCP3BYZA8BDha1U3NsFTN1E3btB0ap3ECHsrTLE/SLEqGaRSnNE7KshpMQilZLm9EQZjNuOn0/Z/Tc5h6ngcGBTP1R4CQ0SHw0fXQeYzGQI5CQzd4nr+6WnoIGYYJJh03PUB9wMmIAzmKqcALc27GzeaW5Xy0/vG2f8GRHCcRiITeADFgafZFOJKhCtAAJzH/j5zlKWR4ardThcbWe4BxsWkbKNlAzovsdNgpYRghl8vLy/l8znHcYrFwHBdeC5gu5ler1RoeqTDCnyGfahvHcXIAfEAnQXbQm1AdWKnr5vM3f0HGw+Y0JcN/ztIH79vxmUv+DjAabCI0UdxQMlzVJoIJTy/xw5D8Z5CQxJQYCL+9NV5drN4s5Xd38l9SmHdkcaLVWQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 83.71246587807097%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAC20lEQVQ4y21Tz0/UQBTev4qDR8GrGP8Bjx48+g+YeJSYqERc1JgoARPjwfUHwcToAURQFhUSZNsFzLZ0t+200/k90+nU10WJJr58ee105nt9b973Wvb9u3Tne//nT5xnShspZf0/01oLIRhjUkhCqJSKc95SYRgHwXGCE8xTYjKiMTNcCNh2f1lVnaKqnatrB75FOD8eDjOE+hH9esj2QhEkDOc5/OS/KQCRq4rKSpeuZYxJEEJ5jnABGOU0yhjlUigllAbPlWRKnIJIcTCkewMyxKoFKQF5lMSUsVI5I60GmoTSJCQPvpTWqfo3dF1pZ+CE4troFpShjIF8jDVe9m0/3RaGuaq2lYUCna185q/laxt4A7CO17/gz2VljbWqNK3KOaEVkIfiqH109YZ/aa/YgCWQheQkodd/XJ9Yn5janJrcnDzz6cyV3SsQs7RWm3/Jt/qXr/24uItXx2QDZJ7zGX9m8vPZC93p6e75c1+mlkfLsKtKpcuyIUu4OFdDsTvFx51ilZXFuBHO2ErLai3deDxYfBo8WwqePRks9ekh7OrSnpBrJZO6DK0YlCRRhLAiEvhA4L7Eh7I4sDSqGapZUvPYFallcW3CSkVN2tBvFL5H3mzqz0f7c/7XWa8763dv97u3/S3AHW/rVm/rZm/7zu72o8HeXOzPo347PVhQRrWggO34w+vg7tvw4Ur44FW//bLX7njtl16705vv9Nov9u919uc6/oPn3uKbwcOV4P5y0H4XLEhoFdSWYopymmEGHmGSFQxhmmQFfE9zSoVuwBUTomAKQJjCoG5tfoskTuJRiuIUHY9GSZqkKE3TBAweSsk/UKfvXHCpdZM2IjSjvFAlIJcliANmqCBEabjRUv8xWBoD12xPmnzaKtNMHOeusgCYG9AlyhBpjIJswTdKVSBFU42tCdqQx/KEuFEUYYxdM251UWDP64VhOGwsgiUbGwSDgYczJ+RfC9GhjwP9vIsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;ss cert tableau cn&quot;
+        alt=&quot;tableau qualsys result&quot;
         title=&quot;&quot;
-        src=&quot;/static/ss-cert-tableau-cn-8e6407a9a6cd19b85e198823abca232b-83ec1.png&quot;
-        srcset=&quot;/static/ss-cert-tableau-cn-8e6407a9a6cd19b85e198823abca232b-5efed.png 240w,
-/static/ss-cert-tableau-cn-8e6407a9a6cd19b85e198823abca232b-83ec1.png 405w&quot;
-        sizes=&quot;(max-width: 405px) 100vw, 405px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ssl-cert-tableau-san-c133c402cc3f7fe835a1ae2ffdc81fbd-83ec1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 405px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 125.92592592592592%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADi0lEQVQ4y4VUaW/bRhDVby76MUlTpO3vaZDAdRC4sSVbSiybig5KvElJPJb3sbwlS3kr2bDTuMhgQCzJfTuzb95MJwm0wPd0TbUsc7vd7vZ3+/3u6Lvd3d3d9kfH96ZpiG92goBYlmU7jm2TOE6iKHaJ63k+PI7joijyeyueepGXQUg6DnEURSau6/uR53k4Z7FYyLIsShIhpKqqI55+ZxnAPsA0z8IwwiZVVWzbDoIgZIZngLOI4yCvJEn2T2zHLrVPsrCTZkmapgAbuuEQwnAPhjVgvu9jw5GAo4GaAzjolFWxWtu+H+IdPzbb7cGx3JVlZRirpt3gV7vZNk3LvG3LqvK8IIy8Tl7mwZJ312rgkboqn6bX1pVjrV3HNg29zLPHtHd3NKNB5DLwejG8/Mx1b8WRsOIWyy8TRSM0rPaGS7FWrNjwCjOqw3Lv5TvmdJPRgoHrOn97bbz6e/3mQ/ryXfDynffbSfTXR/rr+/KXt/T1++DPj9nvH9JXJ8mb0+iP0+TFSfb6n1iQl3Hidcoy5+aT8XSma7okypIkUZofKN1XVT2fCxoqKUmqqgqCpKnqarnKaK7Iahh7naLMR/PJjOdlBpVFUXJsBwICvqmL6ZQX5gtBEDUNItRUBYdoZVlCTixtRL6ZjCazmSqrs+kM/2ZTHpUHuCpLUZQRas7PeX4uiuJ6ba5X67puMkr9iCByIWqKpCi6rhvLlWmai4UAbYLSNM1UTVcVZoaxVBUNWlBVHRKLokNkKIw4TN6O40APlmkBjzWEDVVmD3YvS5yX4ZFmKWUiSdLo4vy83//McaMRNxpeX1/2rsbjie0QyJBp5XtjXDSNaVpJegCPbrkJiFkIsxnPcRyuN55MLdsGK/vnrK5r8HfQdhr1ur1er399PURwrLvdS5QOme7/x9q2JcRlkdM0Hn/9inKAL0EQFFlBYUC4JMk0L54F4y4gPD6m3T2/+HTeHfT7V1eDs7N/+/0+zy/SJDmqBT202WyegtE1yIuBaZ6yIULcYw+6rIcJiD02AAySwFZQhVOO/dhu2iIvGBgKu+/wx6Zha4yRwWBwwwxccJhTsiwNh8PbG246mSJQlPj3YAT5sR6oJ6vtobBgGGUH/7gLvjTN5vnIP7XjGKI07GBg5vQ/8+1hzGWPju7HpjDOVCeSV45uheIaozf0oij8qYdRmMbhivifZqvTweRspFzwyjfzB2FaJ08JaQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;ssl cert tableau san&quot;
-        title=&quot;&quot;
-        src=&quot;/static/ssl-cert-tableau-san-c133c402cc3f7fe835a1ae2ffdc81fbd-83ec1.png&quot;
-        srcset=&quot;/static/ssl-cert-tableau-san-c133c402cc3f7fe835a1ae2ffdc81fbd-5efed.png 240w,
-/static/ssl-cert-tableau-san-c133c402cc3f7fe835a1ae2ffdc81fbd-83ec1.png 405w&quot;
-        sizes=&quot;(max-width: 405px) 100vw, 405px&quot;
+        src=&quot;/static/tableau-qualsys-result-55e981ad21358e2c045e1b6a32156b39-c83f1.png&quot;
+        srcset=&quot;/static/tableau-qualsys-result-55e981ad21358e2c045e1b6a32156b39-569e3.png 240w,
+/static/tableau-qualsys-result-55e981ad21358e2c045e1b6a32156b39-93400.png 480w,
+/static/tableau-qualsys-result-55e981ad21358e2c045e1b6a32156b39-c83f1.png 960w,
+/static/tableau-qualsys-result-55e981ad21358e2c045e1b6a32156b39-faf14.png 1099w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -138,7 +108,7 @@
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;Note that some certificates are wildcard certificates so a single certificate can be used on many servers.&lt;/p&gt;
-&lt;p&gt;Here is my certificate for a domain that I own *.tableau.rocks:&lt;/p&gt;
+&lt;p&gt;Here is my certificate for a domain that I own *.tableau.rocks viewed by right clicking on the lock icon in my web browser:&lt;/p&gt;
 &lt;p&gt;It does have a Common Name in the Subject&lt;/p&gt;
 &lt;p&gt;
   &lt;a
