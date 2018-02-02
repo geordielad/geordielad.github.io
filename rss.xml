@@ -1,5 +1,212 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Thu, 01 Feb 2018 04:25:22 GMT</lastBuildDate><item><title><![CDATA[TensorFlow Lightning Talk]]></title><description><![CDATA[A quick introduction to TensorFlow. Created for a Lightning Talk given to a Deep Learning Study Group.]]></description><link>https://blog.iseevizz.es//posts/Tensorflow-Lightning-Talk/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/Tensorflow-Lightning-Talk/</guid><pubDate>Thu, 01 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is A quick introduction to TensorFlow. It was Created for a Lightning Talk given to a Deep Learning Study Group. We are all taking the &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Coursera Specialization on Deep Learning&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Robin Cottiss]]></title><description><![CDATA[Blog by Robin Cottiss]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Fri, 02 Feb 2018 22:25:19 GMT</lastBuildDate><item><title><![CDATA[Enabling Tableau for SSL]]></title><description><![CDATA[One reason why you might get a certificate error after enabling SSL in Tableau Server]]></description><link>https://blog.iseevizz.es//posts/Tableau-SSL-CN-SAN/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/Tableau-SSL-CN-SAN/</guid><pubDate>Fri, 02 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What’s the problem?&lt;/h2&gt;
+&lt;p&gt;If you enable SSL for your Tableau Server you will need an SSL certificate for your Server. We provide some documentation in the &lt;a href=&quot;https://onlinehelp.tableau.com/current/server/en-us/ssl.htm&quot;&gt;Tableau Server Online Help&lt;/a&gt;. We even have some guidance on &lt;a href=&quot;https://onlinehelp.tableau.com/current/server/en-us/ssl_cert_create.htm&quot;&gt;generating a Certificate Signin Request (CSR)&lt;/a&gt;. In larger enterprises the Tableau Administrator will simply ask for the certificate to be provided by another team. That team generally knows the detailed requirements for the certificate but every now and then we see customers that end up with a certificate that does not work as expected. One of the things that can go wrong is that the certificate has the wrong server name in it’s Subject Alternate Name (SAN) field. The customer might believe the certificate should work because the right server name is in the Common Name (CN)field. This is no longer true for some web browsers dur to loopholes that have been closed. For example Chrome 58 no longer checks the CN when validating SSL Certificates. &lt;/p&gt;
+&lt;p&gt;You can get some details &lt;a href=&quot;https://www.thesslstore.com/blog/security-changes-in-chrome-58/&quot;&gt;here&lt;/a&gt; or from the &lt;a href=&quot;https://www.chromestatus.com/features/4981025180483584&quot;&gt;Chrome Platform Status Page&lt;/a&gt; or even from the &lt;a href=&quot;https://tools.ietf.org/html/rfc6125#section-6.4.4&quot;&gt;RFC&lt;/a&gt;. Thanks to my colleagues Josh and Matt for sharing some of these links when this issue came from a customer today.&lt;/p&gt;
+&lt;h2&gt;How will the Problem Show Up?&lt;/h2&gt;
+&lt;p&gt;You will get an error in your browser like this one from Internet Explorer&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ssl-cert-error-ebab9441807eacef387780c64816c4a2-013f3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 708px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 48.87005649717514%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABW0lEQVQoz5WQ2U6EMBSG+74+g4kmalzu9Yk0JuMS8cILdSbAsLV0L9NTQPTQcUy8Mn58/JzQntJC9m7So0V6fLc+ussObpcnD8X5M51Nos/0LGlOn6rDRX5xn149ZpfRq6Tcv34nDy/vadVmJVsVdJk3acmymm/Na55WvKCialXecMl5r0XQApQArYqqIW3y5GCwxknpjOmUskJaTG2s0VYIA95/TuM0Dh/j2A8DOowjxjSNBPpeG42oiFTSmFhj4FtjhJRcIBIBgBBCH8En8d4zxnBA/CAFLsKFVLFd4no4Ol8Cq67r+h2k6zaU0u2njTHY0PJWxl3oHdtN+QiADzsIHu01S1frapmXmG9ZWdWUUdbOcMZaxjiLxdwIwftvsSb4l6qmrZWrhS25xazlrOughwHCEGAWYNhs4LeB4Kw1VWumskZQofFI1jk7375zf0jcPHVj3Lf2P34Bb5Ap3OW3j/sAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ssl cert error&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ssl-cert-error-ebab9441807eacef387780c64816c4a2-013f3.png&quot;
+        srcset=&quot;/static/ssl-cert-error-ebab9441807eacef387780c64816c4a2-a2088.png 240w,
+/static/ssl-cert-error-ebab9441807eacef387780c64816c4a2-57293.png 480w,
+/static/ssl-cert-error-ebab9441807eacef387780c64816c4a2-013f3.png 708w&quot;
+        sizes=&quot;(max-width: 708px) 100vw, 708px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;In IE you can continue to the site (not recommended) but you will get a certificate error&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ssl-cert-mismatch-error-1f5d3ff118117623c3b3887aaa3fc04c-0828e.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 389px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 80.97686375321337%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACNklEQVQoz2VS2XLaQBDk/78hRcoPtiFVTmwnL3mySSoPMcQGxGUOIyEhdO6h+4ggvVIgJdJMLVOr6dme3m10usNTfOtKDz/7j0+Dx+6wigfkT/2OWMuanoTNTn/6XXr9MV41uu+uhhc348vb0eWn6dXd68evsw9fZq37WfvzFOv1vdK6mzXbv5qtXvP65X1burjpDfrj9Xq5WDYo44x73POQuITsBgNb1Rj3GeWUAR4lnBAaBX4Uhbqm6poep1mSZVGcNA5H7Pf7JM+Xt7fWSiZBYhPfpoHDAoMEYZz9rTkckiQWpUWBpfH7iDzP4yhivmc7jmUa+G23W3Nn6DsdoW1Vz/NACMOwOKJxysBPkkRR5P7L81bfgqKqqq7rsrzWNE1VN6Zl4byKjOJzchzHlFHHdsIo9DFkGGInTVI0jaIIOWrSNK1mFLLr5AgnjyaT+Xw+HA5H49F8sZhOp6vlcjSarGUFZRAly/JisbAsq0ZGexhrmmYQBPv9AcqEOOGOsAduCbIAZlEcxzknB4Hv+7CGM0YodT3O3RKEEMPcYZCslF0prxsWx4ZBNhtTXhtrxVQVi7gc11uBc4bpq8n/M6wowjDgLCDER7jEp8SHZeIOszzL8CfcwkSn2/1HBhwB23UdCFbV3XyujKU3SXrTdQP7AEyilIpuJWrkUhteqgASQhgC3WgJTI7e+ITzkxI1culoDaUcGy8MtDwvEFkG8XkVNfIZYArmxGuB757np2lWRp6JEMkfx9h6el54rr4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ssl cert mismatch error&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ssl-cert-mismatch-error-1f5d3ff118117623c3b3887aaa3fc04c-0828e.png&quot;
+        srcset=&quot;/static/ssl-cert-mismatch-error-1f5d3ff118117623c3b3887aaa3fc04c-2e39f.png 240w,
+/static/ssl-cert-mismatch-error-1f5d3ff118117623c3b3887aaa3fc04c-0828e.png 389w&quot;
+        sizes=&quot;(max-width: 389px) 100vw, 389px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;How can I Fix this Problem?&lt;/h2&gt;
+&lt;p&gt;This is not a Tableau problem so there is nothing you can do in Tableau. You will need a new certificate with your server name is in the SAN field.&lt;/p&gt;
+&lt;p&gt;Below are some working certificates to show how they use the SAN field.&lt;/p&gt;
+&lt;p&gt;Here is one Tableau’s certificates. First the CN then the SAN&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ss-cert-tableau-cn-8e6407a9a6cd19b85e198823abca232b-83ec1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 405px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 125.92592592592592%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADTElEQVQ4y5VU2Y7bNhT1p/ehSJE07VN/oC9FkWke0yRogzSoMzOx7PGMPWNrtXaJEkVR+2It7JUVu5NpiqYHF4RI8JDnXp3LSRTsAuyrO8W2rbZte9Yx1o/R913Xtf8MWK/rGmFrEgTItm3HdR0HURqFIfWQ5/sYglKa53n2Efn9yLMiIGjiIkeWJeR5GIe+78M52+1WkiRBFBFCZVmO/PQTJEDGQE6zBG6DTYoiO44TBAEZAGMAZyHXBV1RFLF76IekWJSQCRyTpllRFJqquQgBGWMcHABnAA2mSZKMBRgBpTmQg0lR5qYJFxJ2KNE4tm0HI5yo6+a+afuuhwrtj6iqMsAkCL1JVmRY25ia4nk+lMqxbRLSUV5d1Zqmq6oWRfF92U3TuC4K6EDOff58tfjAC5IsStvNdr3eGJYFV9dVdbta67qxb5pDqoMqGKqqEkWJUH8gu/yHu5sr3UIlSGs7GMtq3/UsL6rNVpQVVTOMnaopO13TTdNy0rwEmYPsNM8i5dLiOXsn1EX6qbzaENeOKviGbAjryDOxpVBX7Zsc/g4GclFmsxv+yUvz8Zv4+4v+6fkY7Ltz9nTafv0SP/4tfPI7/eY1/vZt8uh18NWL4IeLPaY5uGkgX18vn73XzzjyI5c/37JfNuzsboifr/dn8/DZDP80tX7dFn/o7J3BXu3YC7Hzw4SMBYuNW0da2Zpcxx5EFTr9vhhkl4mrigX19ynpKsgIylYztu+7ipIwCP3BYZA8BDha1U3NsFTN1E3btB0ap3ECHsrTLE/SLEqGaRSnNE7KshpMQilZLm9EQZjNuOn0/Z/Tc5h6ngcGBTP1R4CQ0SHw0fXQeYzGQI5CQzd4nr+6WnoIGYYJJh03PUB9wMmIAzmKqcALc27GzeaW5Xy0/vG2f8GRHCcRiITeADFgafZFOJKhCtAAJzH/j5zlKWR4ardThcbWe4BxsWkbKNlAzovsdNgpYRghl8vLy/l8znHcYrFwHBdeC5gu5ler1RoeqTDCnyGfahvHcXIAfEAnQXbQm1AdWKnr5vM3f0HGw+Y0JcN/ztIH79vxmUv+DjAabCI0UdxQMlzVJoIJTy/xw5D8Z5CQxJQYCL+9NV5drN4s5Xd38l9SmHdkcaLVWQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ss cert tableau cn&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ss-cert-tableau-cn-8e6407a9a6cd19b85e198823abca232b-83ec1.png&quot;
+        srcset=&quot;/static/ss-cert-tableau-cn-8e6407a9a6cd19b85e198823abca232b-5efed.png 240w,
+/static/ss-cert-tableau-cn-8e6407a9a6cd19b85e198823abca232b-83ec1.png 405w&quot;
+        sizes=&quot;(max-width: 405px) 100vw, 405px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ssl-cert-tableau-san-c133c402cc3f7fe835a1ae2ffdc81fbd-83ec1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 405px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 125.92592592592592%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADi0lEQVQ4y4VUaW/bRhDVby76MUlTpO3vaZDAdRC4sSVbSiybig5KvElJPJb3sbwlS3kr2bDTuMhgQCzJfTuzb95MJwm0wPd0TbUsc7vd7vZ3+/3u6Lvd3d3d9kfH96ZpiG92goBYlmU7jm2TOE6iKHaJ63k+PI7joijyeyueepGXQUg6DnEURSau6/uR53k4Z7FYyLIsShIhpKqqI55+ZxnAPsA0z8IwwiZVVWzbDoIgZIZngLOI4yCvJEn2T2zHLrVPsrCTZkmapgAbuuEQwnAPhjVgvu9jw5GAo4GaAzjolFWxWtu+H+IdPzbb7cGx3JVlZRirpt3gV7vZNk3LvG3LqvK8IIy8Tl7mwZJ312rgkboqn6bX1pVjrV3HNg29zLPHtHd3NKNB5DLwejG8/Mx1b8WRsOIWyy8TRSM0rPaGS7FWrNjwCjOqw3Lv5TvmdJPRgoHrOn97bbz6e/3mQ/ryXfDynffbSfTXR/rr+/KXt/T1++DPj9nvH9JXJ8mb0+iP0+TFSfb6n1iQl3Hidcoy5+aT8XSma7okypIkUZofKN1XVT2fCxoqKUmqqgqCpKnqarnKaK7Iahh7naLMR/PJjOdlBpVFUXJsBwICvqmL6ZQX5gtBEDUNItRUBYdoZVlCTixtRL6ZjCazmSqrs+kM/2ZTHpUHuCpLUZQRas7PeX4uiuJ6ba5X67puMkr9iCByIWqKpCi6rhvLlWmai4UAbYLSNM1UTVcVZoaxVBUNWlBVHRKLokNkKIw4TN6O40APlmkBjzWEDVVmD3YvS5yX4ZFmKWUiSdLo4vy83//McaMRNxpeX1/2rsbjie0QyJBp5XtjXDSNaVpJegCPbrkJiFkIsxnPcRyuN55MLdsGK/vnrK5r8HfQdhr1ur1er399PURwrLvdS5QOme7/x9q2JcRlkdM0Hn/9inKAL0EQFFlBYUC4JMk0L54F4y4gPD6m3T2/+HTeHfT7V1eDs7N/+/0+zy/SJDmqBT202WyegtE1yIuBaZ6yIULcYw+6rIcJiD02AAySwFZQhVOO/dhu2iIvGBgKu+/wx6Zha4yRwWBwwwxccJhTsiwNh8PbG246mSJQlPj3YAT5sR6oJ6vtobBgGGUH/7gLvjTN5vnIP7XjGKI07GBg5vQ/8+1hzGWPju7HpjDOVCeSV45uheIaozf0oij8qYdRmMbhivifZqvTweRspFzwyjfzB2FaJ08JaQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ssl cert tableau san&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ssl-cert-tableau-san-c133c402cc3f7fe835a1ae2ffdc81fbd-83ec1.png&quot;
+        srcset=&quot;/static/ssl-cert-tableau-san-c133c402cc3f7fe835a1ae2ffdc81fbd-5efed.png 240w,
+/static/ssl-cert-tableau-san-c133c402cc3f7fe835a1ae2ffdc81fbd-83ec1.png 405w&quot;
+        sizes=&quot;(max-width: 405px) 100vw, 405px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Note that some certificates are wildcard certificates so a single certificate can be used on many servers.&lt;/p&gt;
+&lt;p&gt;Here is my certificate for a domain that I own *.tableau.rocks:&lt;/p&gt;
+&lt;p&gt;It does have a Common Name in the Subject&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ssl-cert-tableau-rocks-cn-c2b37a3111c7a6742581b6cac3d43501-83ec1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 405px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 125.92592592592592%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADGklEQVQ4y62Ua2/bNhSG9ZeLrejHFAM27MP+y74M7ZIlHdoCSdr4VseOYV1t2bpTokSKuliytFeys6Rthl2w1wcyRfGQPOc8pBQTnQS+oWuWta3rumn3bdscrGn2+339taG/LEs32EqEuJZl2Y5j2y6lcRRRz/V8P4BRSoUQ6VHisYk0I6ErOa6tqorreUEQ+b6PeRaLhaIoS1l2XTfP84M//0wMzgGcecqwGgZpmmrbNiEk7IQnwVyu42BfcRy3j9R0QbUxCyVMw3maZflqtcJSnd+90IZbEASMsS76o7pG70ykLBebDRYM8Y4PfwrpwnbWK3NXVf2n4zf8F0Xh+ySMfCnN0mB1tzG0hKfdlvbIcmdQnhfmZru1nC6BAaIItpYVhFFelIxxEnkSF2koX+qzj4YiC86OQfXalYWhLFbq0lrr1kq118ZGk9eqvMu5uTYJ9SSRpcrd5Pxm+ebWG1n7idNOnAbPqdeOrPp0YLyZ2hef7F8+6OfjzbuZ99vYHpnZUtEj6kt5nr4fK9+9Ck5OxbPX1YuL9sV5+/ys/fa0ffaqfnmWnrxOvvmZnJzlP122P75vvn/X/vC23voJjT3ELCLlSpuPdFXhlFR5Wgq2r3bYdiFSTZF9xyKeLRgtc3FfqyYTWRcztn03H3+aTBYLeT5fzGbz4XAcJ13wIEFVjTCMaEzBoKJoCWNJwpD5JOFH54WuyapmmhtdN5De5VJGHVASoKWqYEfDpLKswDAABjyjED+vIww1ABLmeg02wVMSx5kQvEcSePAvyOw7i7zoIKFxeDu91TX96vJ6NptNxpPDamC2j66j5Svh5LU0IRLjiRBZfwCbA1hVXYOtA4N/oebBOcuy9t/pf3MW/9U5FXy32z2Rk4cz+KBDZ1VXSFnnjDo/Pgx9hru253nX19eDweDm5mY4HNq2gxrgdTgYTae3qG4UB084H4QrLgFNvdDAGUZq4jjBzYGesqyeXvkfRNwN5jwEJFHKv7jf7mFiDwayMCikTHMixXQMK1xucPWGfgRO/87AckJD0w1+n5m/Xk0vxurbufoHFo96YBTwFv0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ssl cert tableau rocks cn&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ssl-cert-tableau-rocks-cn-c2b37a3111c7a6742581b6cac3d43501-83ec1.png&quot;
+        srcset=&quot;/static/ssl-cert-tableau-rocks-cn-c2b37a3111c7a6742581b6cac3d43501-5efed.png 240w,
+/static/ssl-cert-tableau-rocks-cn-c2b37a3111c7a6742581b6cac3d43501-83ec1.png 405w&quot;
+        sizes=&quot;(max-width: 405px) 100vw, 405px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;but it also has the wildcard in the SAN&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ssl-cert-tableau-rocks-san-8f17660c3cc872187d55515f3f0559ce-83ec1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 405px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 125.92592592592592%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADIUlEQVQ4y51UiY7bNhD1dxcIigZpEBT9mSAosG4uuJt0F7CdXcuKJes+TeogJVGiDh9yh9Zm46IGkvRhIEgjvhHnzaNGeWqlSWxbZhgG+/2+Px6Ox36Ivj8cDvv/BuS7rsNJMEpTHIbhBqHNBmdZTmkW4SiOE4gsyzjn1QP4efCqTgkeIYwMQ8dRlCQ0jmOooyiKrutrTcMYN00z8Mt/gQE5AXJZMUIoLDJNY7PZpGlKBOCaQi2MEOwrz/PjGXrR1DFnZFSwPC8KIDu2gxAGcpIk6QlQA2jwyBgT3T/isD+R01Hd8CDYJCk5niSCK6zb7UCYvqkb1/W22x0kH0iQPhzatk3ilNB4xOtKt0zX80+q4SAIQY9he13XOq7v+0GIMIiIcRwJKdOu2zFWpTQS5Dv5Tl0tHEP1LN1QV46pJSigOGhrtl7JhvLZMXVLU1xTc4w1Dpx+v+UVF2SQ83qxGt8qk4U7uXf+unfHN+q15C3DZm6X7+bG9cKZ3LvX4q39QQ4mkid5ZQmjAnLbVC9nztNXwbMr+usYgjx5Ff3+nv/8dvfTVf3idfb8z+zJH/S3N/mLN8WzcfbLmEHGsIMsP/Usr+ar5cK3TN82LF0NXXvbtdDztqt9x0C+49vmxncD10K+TSLU1KWm6SQT5FKR30kLybJsRdUozUHqQTBeN3f3kqqqsrwyDEtR1qqAXvFG6DYI5nm649i6bjquB9MF1eumhbEUBTMMU3g2y8FWVVkVRQGu4LyGb4hRgcPA1YEfgBkRQrZti5lh/ODDsuRn/h5MzkrWNK0wSV7Qvz98vL2dSpI8m85ms09LaQkDH9zSXwacvGNWpCNWFjXng73AOvsT4fgN9Gfkuh5ysCcw4aNPf4z83Tgn8/9Lrni53W4vaHJ+Bh/P4im52+9AMkGGOT8Weyh7ajiKotubG1B/Op3O53OYoq5r4n72SZKWYBKaJxfIX85jB5YQo2YMbmAQIGcm3FJBBk7l5S9/R8dicVmSEZgPfFdeAmNfA7wGi0jGTER1D9khWfvw6yUxpeSbQSgpMuLh5L3sXd1Ib++MyWfjH2SZdK1IiLHUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ssl cert tableau rocks san&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ssl-cert-tableau-rocks-san-8f17660c3cc872187d55515f3f0559ce-83ec1.png&quot;
+        srcset=&quot;/static/ssl-cert-tableau-rocks-san-8f17660c3cc872187d55515f3f0559ce-5efed.png 240w,
+/static/ssl-cert-tableau-rocks-san-8f17660c3cc872187d55515f3f0559ce-83ec1.png 405w&quot;
+        sizes=&quot;(max-width: 405px) 100vw, 405px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This certificate will work on tableau.rocks or www.tableau.rocks etc.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[TensorFlow Lightning Talk]]></title><description><![CDATA[A quick introduction to TensorFlow. Created for a Lightning Talk given to my Deep Learning Study Group.]]></description><link>https://blog.iseevizz.es//posts/Tensorflow-Lightning-Talk/</link><guid isPermaLink="false">https://blog.iseevizz.es//posts/Tensorflow-Lightning-Talk/</guid><pubDate>Thu, 01 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is a quick introduction to TensorFlow. It was Created for a Lightning Talk given to a Deep Learning Study Group. We are all taking the &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Coursera Specialization on Deep Learning&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Soon after starting the Coursera DL Course I was also finding references to TensorFlow and started watching some &lt;a href=&quot;https://www.youtube.com/playlist?list=PLOU2XLYxmsIKGc_NBoIhTn2Qhraji53cv&quot;&gt;YouTube videos&lt;/a&gt; talking about Tensorflow. At the time I was unaware that the course would use TensorFlow.&lt;/p&gt;
 &lt;h2&gt;Deep Learning Frameworks&lt;/h2&gt;
 &lt;p&gt;
@@ -104,6 +311,44 @@ It cost me $160 new in November 2017. When I checked on January 31st it is selli
 &lt;li&gt;cuDNN &lt;/li&gt;
 &lt;li&gt;TensorFlow&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;Comparing CPU v GPU&lt;/h3&gt;
+&lt;p&gt;Here is the cifar10_train.py running on my GPU:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/-cifar10-train-gpu-task-manager-6101f39db197e3b4c78dfa18f2dbae05-23e13.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACzklEQVQoz01QTW8TVxSdJR+FBjtmbDcICdQdUtf9Bd1VqVQETVn2L/QPsOimCwSIolbgpKGyQK1QIAZNAsQOEgoJGBwnTcYwTuxkbM94Pt7nvHnz5eERseDq6upI751z7zlSQ9XW37fXW9qmtvtW1Zpae1Nrb7Tbjda7V1vvV1r7dU1fe6e/UPVVtbvRMZ6ua9WtrvjZ2ulI1aXFh4vPHj95pixVlaWaUq0tVJcXa8+V5Rdv6ytktYRWZ+zan/rCNV25Ap7ftF6W+rUbcLAbhrF0YfI7uXhKzheyudzJfP742InMeE7O5w8dz/x++dfg30vO7Hn4z0V450c4+wOY+R6Vp6zpSbvTjNJU+unnS18Vi6JlWS4UCplMJpfL5WVZkqTrV6+maRqFcRKno1GaJGkcp+koRdgzbScMQ+nC1FSxWJiYmJDlk8VCIZvN5sazp8+c/Xbql9/+U+ogXNbdp+3Bgrr3ZMdY6ljVfbDQUJuv68z3P5Kz4+OivxwbEycf/eLY4SNHvj73Tb1raIa1uddv7updgHvI6zqo6+IuIHsO2jEdRKh0/cYf5bv35h7O3597MF95NFd5PF+eVSqVtm4g20rCAEFIKAuCyPMYFc2YACZmEBNpaBhRJMx/Vtzzo7hnu67tJEmMebIPfB2wHuI9yPchN0moQ4YIkbBjOa4LRSFECbEJh4Rh5vdsBwIQxwn0uIH8IQ76gBmQGYjZNOyjg82+77ODopQKTD3Po5Tw0MKUM5aMRoQQhBAAQADxyDkXxzkeB4JsDoeDwcAwDMuyhITv85D7lPk4+ORFWBR6QRCIKdQJwgfkAIjAgGUKWYKgmBRjihGFjuW6e44wgl3CHOSJYHkYMR4wzkVgPIqGmELXlW6taffXtx+8apQXFeX/neVds7LVKa1ulVeaj9R+aUOfbg3/bg2nt80Z1SxtG39t9m83OrNv2rfX1A9UYlzhHUaoVwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; cifar10 train gpu task manager&quot;
+        title=&quot;&quot;
+        src=&quot;/static/-cifar10-train-gpu-task-manager-6101f39db197e3b4c78dfa18f2dbae05-c83f1.png&quot;
+        srcset=&quot;/static/-cifar10-train-gpu-task-manager-6101f39db197e3b4c78dfa18f2dbae05-569e3.png 240w,
+/static/-cifar10-train-gpu-task-manager-6101f39db197e3b4c78dfa18f2dbae05-93400.png 480w,
+/static/-cifar10-train-gpu-task-manager-6101f39db197e3b4c78dfa18f2dbae05-c83f1.png 960w,
+/static/-cifar10-train-gpu-task-manager-6101f39db197e3b4c78dfa18f2dbae05-23e13.png 1440w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Note that I am getting over 3K examples as second or each batch is taking 0.039 seconds and my CPU is not running that much.&lt;/p&gt;
+&lt;p&gt;If I switch to the cpu version I get a very different performance.&lt;/p&gt;
 &lt;h2&gt;An Example Application of Tensorflow&lt;/h2&gt;
 &lt;h3&gt;Donkey Car&lt;/h3&gt;
 &lt;p&gt;
